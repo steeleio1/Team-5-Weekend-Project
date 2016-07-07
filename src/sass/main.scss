@@ -1,0 +1,165 @@
+.mainBox {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border: solid black 1px;
+	margin-left: 50px;
+	margin-top: 10px;
+	height: 2280px;
+	width: 960px;
+	flex: 1;
+}
+// ==========BANNER==================
+.bannerBox {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	border: solid red 1px;
+	height: 115px;
+	width: 940px;
+	border-bottom: solid grey 2px;
+}
+
+.location1Box {
+	display: flex;
+	border: solid orange 1px;
+	height: 114px;
+	width: 470px;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.location2Box {
+	display: flex;
+	flex-align: right;
+	border: solid orange 1px;
+	// margin-left: 50px;
+	height: 90px;
+	width: 270px;
+	justify-content: center;
+	align-items: center;
+}
+
+// ==========HERO IMAGE==================
+.location3Box {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	border: solid red 1px;
+	height: 270px;
+	width: 940px;
+	margin-top: 20px;
+
+}
+
+// =========INFO================
+.infoBox {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	border: solid red 1px;
+	height: 270px;
+	width: 940px;
+	margin-top: 20px;
+}
+
+.location4Box {
+	display: flex;
+	flex-direction: row;
+	border: solid orange 1px;
+	height: 240px;
+	width: 300px;
+	justify-content: center;
+	align-items: center;
+}
+
+.location5Box {
+	display: flex;
+	flex-direction: row;
+	border: solid orange 1px;
+	height: 240px;
+	width: 300px;
+	justify-content: center;
+	align-items: center;
+}
+
+.location6Box {
+	display: flex;
+	flex-direction: row;
+	border: solid orange 1px;
+	height: 240px;
+	width: 300px;
+	justify-content: center;
+	align-items: center;
+}
+
+// ==========POP UP ITEMS=======
+.menuAndpicsBox {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	// align-items: center;
+	border: solid red 1px;
+	height: 1540px;
+	width: 940px;
+	margin-top: 20px;
+}
+
+.location7Box {
+	display: flex;
+	flex-direction: column;	
+	border: solid orange 1px;
+	height: 800px;
+	width: 690px;
+	flex: 1;
+}
+
+.location8Box {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;	
+	border: solid orange 1px;
+	height: 1260px;
+	width: 220px;
+	// flex: 1;
+}
+
+.foodPicsBox {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: solid yellow 1px;
+	height: 50px;
+	width: 210px;
+}
+
+.photoBoxes {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: solid yellow 1px;
+	height: 216px;
+	width: 216px;
+}
+//===========FOOTER===============
+.footerBox {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	border: solid red 1px;
+	height: 80px;
+	width: 940px;
+	margin-top: 20px;
+}
+
+
+
+
+
+
+
