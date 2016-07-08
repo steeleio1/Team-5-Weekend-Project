@@ -1,5 +1,5 @@
 import $ from 'jquery';
-function switchSlide(slide, content){
+function switchSlide(content){
     $('.contentBox').html(content);
 }
 
