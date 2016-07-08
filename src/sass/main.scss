@@ -99,7 +99,7 @@
 
 .titleBox {
 	display: flex;
-	border: solid blue 1px;
+	border: solid green 1px;
 	height: 40px;
 	width: 200px;
 	align-items: center;
@@ -107,7 +107,7 @@
 
 .dateBox {
 	display: flex;
-	border: solid blue 1px;
+	border: solid green 1px;
 	height: 40px;
 	width: 50px;
 	align-items: center;
@@ -237,7 +237,7 @@
 
 .main {
 	display: flex;
-	border: solid blue 1px;
+	border: solid green 1px;
 	height: 20px;
 	width: 145px;
 	align-items: center;
@@ -246,7 +246,7 @@
 
 .res {
 	display: flex;
-	border: solid blue 1px;
+	border: solid green 1px;
 	height: 20px;
 	width: 145px;
 	align-items: center;
@@ -263,7 +263,7 @@
 }
 .mapLink {
 	display: flex;
-	border: solid blue 1px;
+	border: solid green 1px;
 	height: 20px;
 	width: 100px;
 	align-items: center;
@@ -272,7 +272,7 @@
 
 .directionsLink {
 	display: flex;
-	border: solid blue 1px;
+	border: solid green 1px;
 	height: 20px;
 	width: 100px;
 	align-items: center;
@@ -305,9 +305,52 @@
 .tabsBox {
  	display: flex;
 	flex-direction: row;	
-	border: solid orange 1px;
+	border: solid yellow 1px;
 	height: 50px;
-	width: 600px;
+	width: 680px;
+	border-bottom: solid grey 2px;
+}
+
+.storyTabBox {
+ 	display: flex;
+	border: solid green 1px;
+	height: 50px;
+	width: 100px;
+	align-items: center;
+	border-top: solid grey 2px;
+	border-left: solid grey 2px;
+	border-right: solid grey 2px;
+}
+
+.menuTabBox {
+	display: flex;
+	border: solid green 1px;
+	height: 50px;
+	width: 100px;
+	align-items: center;
+	border-top: solid grey 2px;
+	border-left: solid grey 2px;
+	border-right: solid grey 2px;
+}
+
+.resTabBox {
+	display: flex;
+	border: solid green 1px;
+	height: 50px;
+	width: 100px;
+	align-items: center;
+	border-top: solid grey 2px;
+	border-left: solid grey 2px;
+	border-right: solid grey 2px;
+}
+
+.storyBox {
+	display: flex;
+	flex-direction: column;	
+	border: solid yellow 1px;
+	height: 750px;
+	width: 680px;
+	align-items: center;
 }
 
 // ====================== Location 8 ==================
@@ -329,6 +372,7 @@
 	border: solid yellow 1px;
 	height: 50px;
 	width: 210px;
+	border-bottom: solid grey 2px;
 }
 
 .photoBoxes {
@@ -339,6 +383,10 @@
 	height: 216px;
 	width: 216px;
 }
+
+
+
+
 //===========FOOTER===============
 .footerBox {
 	display: flex;
