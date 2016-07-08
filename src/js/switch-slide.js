@@ -1,3 +1,4 @@
+import $ from 'jquery';
 function switchSlide(slide, content){
     $('.contentBox').html(content);
 }
