@@ -1,5 +1,6 @@
 import $ from 'jquery';
 import flickr from './api/flickr';
+import switchTo from './switch-slide'
 
 function populate(flickrPhotos){
     console.log(flickrPhotos);
