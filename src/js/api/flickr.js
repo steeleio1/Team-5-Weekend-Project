@@ -11,7 +11,8 @@ function request(options) {
             nojsoncallback: 1,
             method: options.method,
             text: options.search_term,
-            sort: 'relevance'
+            sort: 'relevance',
+            per_page: 4
         }
     })
 }
