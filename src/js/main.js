@@ -24,7 +24,7 @@ flickr({ method: 'flickr.photos.search', search_term: 'beer' }).then(populate);
 flickr({ method: 'flickr.photos.search', search_term: 'bar food' }).then(populate);
 
 $(document)
-    .delegate('.storyTab', 'click', switchTo('story', mainContent['story']))
-    .delegate('.menuTab', 'click', switchTo('menu', mainContent['menu']))
-    .delegate('.resTab', 'click', switchTo('reservations', mainContent['reservations']))
-    .delegate('.gamesTab', 'click', switchTo('games', mainContent['games']));
+    .delegate('.storyTab', 'click', function(){ switchTo(mainContent['story']); })
+    .delegate('.menuTab', 'click', function(){ switchTo(mainContent['menu']); })
+    .delegate('.resTab', 'click', function(){ switchTo(mainContent['reservations']); })
+    .delegate('.gamesTab', 'click', function(){ switchTo(mainContent['games']); });
