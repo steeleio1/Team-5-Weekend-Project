@@ -1,15 +1,17 @@
 import $ from 'jquery';
 import flickr from './api/flickr';
 
-flickr({ method: 'flickr.photos.search', search_term: 'beer' }).then(function(data){
-    console.log(data);
-    var box = $('.container');
-    var beerPhotos = data.photos.photo.splice(1, 3);
-    box.empty();
-    beerPhotos.forEach(function(photo){
-        box.append(`
-            <div style="width: 217px; height: 217px;">
-                <img src="https://farm${photo.farm}.staticflickr.com/${photo.server}/${photo.id}_${photo.secret}.jpg" style="width: 100%; height: 100%;">
+function populate(flickrPhotos){
+    console.log(flickrPhotos);
+    var container = $('.location8Box');
+    var Photos = flickrPhotos.photos.photo.splice(1, 3);
+    Photos.forEach(function(photo){
+        container.append(`
+            <div class="photoBox">
+                <img src="https://farm${photo.farm}.staticflickr.com/${photo.server}/${photo.id}_${photo.secret}.jpg">
             </div>`);
     });
-});
+}
+
+flickr({ method: 'flickr.photos.search', search_term: 'beer' }).then(populate);
+flickr({ method: 'flickr.photos.search', search_term: 'bar food' }).then(populate);
