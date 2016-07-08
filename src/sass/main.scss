@@ -28,6 +28,7 @@
 	width: 470px;
 	justify-content: center;
 	align-items: center;
+	font-size: 60px;
 
 }
 
@@ -67,38 +68,219 @@
 	margin-top: 20px;
 }
 
+// ==========Location 4===========
 .location4Box {
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
+	justify-content: space-around;
 	border: solid orange 1px;
 	height: 240px;
 	width: 300px;
-	justify-content: center;
 	align-items: center;
 }
 
+.latestNewsBox {
+	display: flex;
+	border: solid yellow 1px;
+	height: 40px;
+	width: 295px;
+	align-items: center;
+	border-bottom: solid grey 2px;	
+}
+
+.titleAndDateBox {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	border: solid yellow 1px;
+	height: 45px;
+	width: 300px;
+}
+
+.titleBox {
+	display: flex;
+	border: solid blue 1px;
+	height: 40px;
+	width: 200px;
+	align-items: center;
+}
+
+.dateBox {
+	display: flex;
+	border: solid blue 1px;
+	height: 40px;
+	width: 50px;
+	align-items: center;
+}
+
+.paragraphBox {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border: solid yellow 1px;
+	height: 130px;
+	width: 290px;
+	overflow: scroll;
+}
+
+.readMoreBox {
+	display: flex;
+	border: solid yellow 1px;
+	height: 12px;
+	width: 290px;
+	align-items: center;
+
+}
+
+// =========location 5===============
 .location5Box {
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
+	justify-content: space-between;
 	border: solid orange 1px;
 	height: 240px;
 	width: 300px;
-	justify-content: center;
 	align-items: center;
 }
 
+.specialsBox {
+	display: flex;
+	border: solid yellow 1px;
+	height: 40px;
+	width: 295px;
+	align-items: center;
+	border-bottom: solid grey 2px;	
+}
+
+.specialsImgBox {
+	display: flex;
+	// flex-direction: column;
+	align-items: center;
+	border: solid yellow 1px;
+	height: 100px;
+	width: 260px;
+}
+
+
+.specialsNameBox td {
+	// display: flex;
+    max-width:255px;
+    height: 25px;
+    overflow:hidden;
+    white-space:nowrap;
+	align-items: center;
+	border: solid yellow 1px;
+}
+.specialsNameBox td:first-child:after {
+    content:" - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - "
+}
+
+
+.spDescriptionBox {
+	display: flex;
+	border: solid yellow 1px;
+	height: 34px;
+	width: 290px;
+	align-items: center;
+	margin-bottom: 5px;
+}
+
+
+
+// ==============Location 6===============
 .location6Box {
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	border: solid orange 1px;
 	height: 240px;
 	width: 300px;
 	justify-content: center;
 	align-items: center;
+	justify-content: space-between;
 }
 
-// ==========POP UP ITEMS=======
-.menuAndpicsBox {
+.locationBox {
+	display: flex;
+	border: solid yellow 1px;
+	height: 40px;
+	width: 295px;
+	align-items: center;
+	border-bottom: solid grey 2px;	
+}
+
+.gMapsBox {
+	display: flex;
+	align-items: center;
+	border: solid yellow 1px;
+	height: 100px;
+	width: 260px;
+}
+
+.addressBox {
+	display: flex;
+	border: solid yellow 1px;
+	height: 20px;
+	width: 295px;
+	align-items: center;
+	justify-content: center;
+}
+
+.phoneNumBox {
+	display: flex;
+	justify-content: space-between;
+	border: solid yellow 1px;
+	height: 20px;
+	width: 295px;
+	align-items: center;
+	justify-content: center;
+}
+
+.main {
+	display: flex;
+	border: solid blue 1px;
+	height: 20px;
+	width: 145px;
+	align-items: center;
+	justify-content: center;
+}
+
+.res {
+	display: flex;
+	border: solid blue 1px;
+	height: 20px;
+	width: 145px;
+	align-items: center;
+	justify-content: center;
+}
+
+.mapsInfoBox {
+	display: flex;
+	border: solid yellow 1px;
+	height: 20px;
+	width: 295px;
+	align-items: center;
+	justify-content: center;
+}
+.mapLink {
+	display: flex;
+	border: solid blue 1px;
+	height: 20px;
+	width: 100px;
+	align-items: center;
+	justify-content: center;
+}
+
+.directionsLink {
+	display: flex;
+	border: solid blue 1px;
+	height: 20px;
+	width: 100px;
+	align-items: center;
+	justify-content: center;
+}
+
+// ======================== Main  Tabs box =======
+.mainTabsBox {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
@@ -109,15 +291,26 @@
 	margin-top: 20px;
 }
 
+
+// ================== Location 7 ================
 .location7Box {
 	display: flex;
 	flex-direction: column;	
 	border: solid orange 1px;
 	height: 800px;
 	width: 690px;
-	flex: 1;
+	// flex: 1;
 }
 
+.tabsBox {
+ 	display: flex;
+	flex-direction: row;	
+	border: solid orange 1px;
+	height: 50px;
+	width: 600px;
+}
+
+// ====================== Location 8 ==================
 .location8Box {
 	display: flex;
 	flex-direction: column;
@@ -129,7 +322,7 @@
 	// flex: 1;
 }
 
-.foodPicsBox {
+.foodPicsTextBox {
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -152,6 +345,7 @@
 	flex-direction: row;
 	align-items: center;
 	border: solid red 1px;
+	border-top: solid grey 2px;
 	height: 80px;
 	width: 940px;
 	margin-top: 20px;
