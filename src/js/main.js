@@ -1,5 +1,9 @@
 import $ from 'jquery';
+import get from './get-content'
 import flickr from './api/flickr';
+import switchTo from './switch-slide'
+
+var mainContent = [];
 
 function populate(flickrPhotos){
     console.log(flickrPhotos);
@@ -13,5 +17,14 @@ function populate(flickrPhotos){
     });
 }
 
+get('our-story').then(function(data){ mainContent['story'] = data; });
+get('menu').then(function(data){ mainContent['menu'] = data; });
+
 flickr({ method: 'flickr.photos.search', search_term: 'beer' }).then(populate);
 flickr({ method: 'flickr.photos.search', search_term: 'bar food' }).then(populate);
+
+$(document)
+    .delegate('.storyTab', 'click', function(){ switchTo(mainContent['story']); })
+    .delegate('.menuTab', 'click', function(){ switchTo(mainContent['menu']); })
+    .delegate('.resTab', 'click', function(){ switchTo(mainContent['reservations']); })
+    .delegate('.gamesTab', 'click', function(){ switchTo(mainContent['games']); });

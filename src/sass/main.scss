@@ -1,3 +1,4 @@
+
 html { 
   background: url(/images/wood_BG_Vert.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
@@ -6,6 +7,34 @@ html {
   background-size: cover;
 }
 
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -khtml-border-radius: $radius;
+    border-radius: $radius;
+}
+
+@mixin box-shadow($shadow) {
+    -webkit-box-shadow: $shadow;
+    -moz-box-shadow: $shadow;
+    -ms-box-shadow: $shadow;
+    box-shadow: $shadow;
+}
+
+@mixin transition($transition) {
+    -webkit-transition: $transition;
+    -moz-transition: $transition;
+    -o-transition: $transition;
+    transition: $transition;
+}
+
+@mixin transform($transformation) {
+    -webkit-transform: $transformation;
+    -moz-transform: $transformation;
+    -o-transform: $transformation;
+    -ms-transform: $transformation;
+    transform: $transformation;
+}
 
 .mainBox {
 	display: flex;
@@ -359,6 +388,8 @@ a:hover {
 	border-bottom: solid grey 2px;
 }
 
+
+
 .storyTabBox {
  	display: flex;
 	border: solid green 1px;
@@ -370,12 +401,39 @@ a:hover {
 	border-right: solid grey 2px;
 }
 
-.menuTabBox {
+.tabsBox {
 	display: flex;
 	border: solid green 1px;
 	flex-direction: row;
 	border: solid orange 1px;
+	border-bottom: 1px solid black;
 	height: 50px;
+	width: 600px;
+	padding: 10px 15px 0;
+	.Box {
+	    position: relative;
+	    top: 1px;
+		background: white;
+		cursor: pointer;
+		margin: 0 15px;
+		padding: 0 10px;
+		border: 1px solid black;
+		border-bottom: 0;
+		@include border-radius(5px 5px 0 0);
+		//@include transition(all 0.4s ease);
+		&:hover {
+			padding: 15px 10px 20px;
+			display: table;
+			top: -15px;
+			font-size: 26px;
+			p {
+				margin: 0;
+			}
+		}
+	}
+}
+
+.menuTabBox {
 	width: 100px;
 	align-items: center;
 	border-top: solid grey 2px;
@@ -406,7 +464,7 @@ a:hover {
 
 .contentsBox {
 	display: flex;
-	flex-direction: column;	
+	flex-direction: column;
 	border: solid yellow 1px;
 	height: 750px;
 	width: 680px;
