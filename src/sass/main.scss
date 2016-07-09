@@ -1,12 +1,3 @@
-
-html { 
-  background: url(/images/wood_BG_Vert.jpg) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-
 @mixin border-radius($radius) {
     -webkit-border-radius: $radius;
     -moz-border-radius: $radius;
@@ -36,6 +27,19 @@ html {
     transform: $transformation;
 }
 
+html {
+  background: url(/images/wood_BG_Vert.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+@font-face {
+	font-family: "The Noun Project";
+	src: url("../../The-Noun-Project.woff");
+}
+
 .mainBox {
 	display: flex;
 	flex-direction: column;
@@ -47,11 +51,6 @@ html {
 	width: 960px;
 	background: rgba(255, 204, 153, 0.9);
 	flex: 1;
-	 //  background: url(/images/wood_BG_Vert.jpg) no-repeat center center fixed; 
-  // -webkit-background-size: cover;
-  // -moz-background-size: cover;
-  // -o-background-size: cover;
-  // background-size: cover;
 }
 // ==========BANNER==================
 .bannerBox {
@@ -88,6 +87,22 @@ html {
 	align-items: center;
 	background: rgba(221, 179, 136, 0.8);
 	color: #993500;
+	a {
+		color: black;
+		font: 24px The Noun Project;
+		text-decoration: none;
+		outline: 0;
+		margin: 0 15px;
+	}
+	.twitter:before {
+		content: "\24e3";
+	}
+	.facebook:before {
+		content: "\24d5";
+	}
+	.instagram:before {
+		content: "\24d8";
+	}
 }
 
 // ==========HERO IMAGE==================
@@ -100,12 +115,6 @@ html {
 	height: 270px;
 	width: 940px;
 	margin-top: 20px;
-	 //  background: url(/images/wood_BG_Vert.jpg) no-repeat center center fixed; 
-  // -webkit-background-size: cover;
-  // -moz-background-size: cover;
-  // -o-background-size: cover;
-  // background-size: cover;
-
 }
 
 // =========INFO================
@@ -301,7 +310,7 @@ a {
 }
 
 a:hover {
-	color: grey;	
+	color: grey;
 }
 
 .main {
@@ -352,7 +361,7 @@ a:hover {
 	justify-content: center;
 }
 .directionsLink:hover{
-	color: grey;	
+	color: grey;
 }
 
 // ======================== Main  Tabs box =======
@@ -381,14 +390,12 @@ a:hover {
 
 .tabsBox {
  	display: flex;
-	flex-direction: row;	
+	flex-direction: row;
 	border: solid yellow 1px;
 	height: 50px;
 	width: 680px;
 	border-bottom: solid grey 2px;
 }
-
-
 
 .storyTabBox {
  	display: flex;
@@ -452,16 +459,6 @@ a:hover {
 	border-right: solid grey 2px;
 }
 
-// ===============Contents Box===============
-// .storyBox {
-// 	display: flex;
-// 	flex-direction: column;	
-// 	border: solid yellow 1px;
-// 	height: 750px;
-// 	width: 680px;
-// 	align-items: center;
-// }
-
 .contentsBox {
 	display: flex;
 	flex-direction: column;
@@ -474,7 +471,7 @@ a:hover {
 .menuBox {
 	display: flex;
 	flex-direction: column;
-	justify-content: space-around;	
+	justify-content: space-around;
 	border: solid green 1px;
 	height: 745px;
 	width: 675px;
@@ -489,12 +486,12 @@ a:hover {
 	align-items: center;
 	border-bottom: solid grey 2px;
 	font-size: 40px;
-	overflow:hidden;	
+	overflow:hidden;
 }
 
 .appNameBox {
 	display: flex;
-	flex-direction: row;	
+	flex-direction: row;
 	border: solid blue 1px;
 	height: 40px;
 	width: 670px;
@@ -523,7 +520,6 @@ a:hover {
 	align-items: center;
 	overflow:hidden;
 	white-space:nowrap;
-    
 }
 
 .appPrice {
@@ -534,9 +530,19 @@ a:hover {
 	border: solid indigo 1px;
 	height: 20px;
 	align-items: center;
-	white-space:nowrap;	
+	white-space:nowrap;
 }
 
+
+// 	border: solid blue 1px;
+// 	height: 40px;
+// 	max-width: 670px;
+// 	align-items: center;
+// }
+
+.appNameBox td:first-child:after {
+    content:" - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - "
+}
 
 .appDescn-InfoButtonsBox {
 	display: flex;
@@ -572,12 +578,12 @@ a:hover {
 	width: 670px;
 	align-items: center;
 	border-bottom: solid grey 2px;
-	font-size: 40px;	
+	font-size: 40px;
 }
 
 .grubNameBox {
 	display: flex;
-	flex-direction: row;	
+	flex-direction: row;
 	border: solid blue 1px;
 	height: 40px;
 	width: 670px;
@@ -604,9 +610,26 @@ a:hover {
 	border: solid indigo 1px;
 	height: 20px;
 	align-items: center;
-	white-space:nowrap;	
+	white-space:nowrap;
 }
 
+// 	font-size: 40px;
+// }
+
+.grubNameBox {
+	// display: flex;
+	// justify-content: space-between;
+	overflow:hidden;
+    white-space:nowrap;
+	border: solid blue 1px;
+	height: 40px;
+	max-width: 670px;
+	align-items: center;
+}
+
+.grubNameBox td:first-child:after {
+    content:"  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - "
+}
 
 .grubDescn-InfoButtonsBox {
 	display: flex;
@@ -635,12 +658,20 @@ a:hover {
 	width: 670px;
 	align-items: center;
 	border-bottom: solid grey 2px;
-	font-size: 40px;	
+	font-size: 40px;
 }
 
 .beerNameBox {
 	display: flex;
-	flex-direction: row;	
+	flex-direction: row;
+	font-size: 40px;
+}
+
+.beerNameBox {
+	// display: flex;
+	// justify-content: space-between;
+	 overflow:hidden;
+    white-space:nowrap;
 	border: solid blue 1px;
 	height: 40px;
 	width: 670px;
@@ -667,7 +698,11 @@ a:hover {
 	border: solid indigo 1px;
 	height: 20px;
 	align-items: center;
-	white-space:nowrap;		
+	white-space:nowrap;
+}
+
+.beerNameBox td:first-child:after {
+    content:" - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - "
 }
 
 .beerDescn-InfoButtonsBox {
@@ -693,7 +728,7 @@ a:hover {
 .resFormBox {
 	display: flex;
 	flex-direction: column;
-	justify-content: space-around;	
+	justify-content: space-around;
 	border: solid green 1px;
 	height: 745px;
 	width: 675px;
@@ -705,7 +740,7 @@ a:hover {
 	height: 50px;
 	width: 670px;
 	align-items: center;
-	font-size: 25px;	
+	font-size: 25px;
 }
 
 .nameInput {
@@ -713,7 +748,7 @@ a:hover {
 	border: solid grey 1px;
 	height: 50px;
 	width: 670px;
-	align-items: center;	
+	align-items: center;
 }
 
 .guestsTitle {
@@ -722,7 +757,7 @@ a:hover {
 	height: 50px;
 	width: 670px;
 	align-items: center;
-	font-size: 25px;	
+	font-size: 25px;
 }
 
 .guestInput {
@@ -739,7 +774,7 @@ a:hover {
 	height: 50px;
 	width: 670px;
 	align-items: center;
-	font-size: 25px;	
+	font-size: 25px;
 }
 
 
@@ -757,7 +792,7 @@ a:hover {
 	height: 50px;
 	width: 670px;
 	align-items: center;
-	font-size: 25px;	
+	font-size: 25px;
 }
 
 textarea {
@@ -773,7 +808,7 @@ textarea {
 	height: 50px;
 	width: 670px;
 	align-items: center;
-	font-size: 25px;	
+	font-size: 25px;
 }
 
 select {
@@ -827,7 +862,7 @@ select {
 .gamesBox {
 	display: flex;
 	flex-direction: column;
-	justify-content: space-around;	
+	justify-content: space-around;
 	border: solid green 1px;
 	height: 745px;
 	width: 675px;
@@ -873,8 +908,6 @@ select {
 	margin-left: 10px;
 }
 
-
-
 // ====================== Location 8 ==================
 .location8Box {
 	display: flex;
@@ -909,9 +942,6 @@ select {
 		height: 100%;
 	}
 }
-
-
-
 
 //===========FOOTER===============
 .footerBox {
