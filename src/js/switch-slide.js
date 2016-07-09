@@ -1,6 +1,6 @@
 import $ from 'jquery';
 function switchSlide(content){
-    $('.contentBox').html(content);
+    $('.contentsBox').html(content);
 }
 
 export default switchSlide;
