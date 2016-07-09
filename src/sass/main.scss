@@ -1,3 +1,12 @@
+html { 
+  background: url(/images/wood_BG_Vert.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
 .mainBox {
 	display: flex;
 	flex-direction: column;
@@ -8,6 +17,11 @@
 	height: 2280px;
 	width: 960px;
 	flex: 1;
+	 //  background: url(/images/wood_BG_Vert.jpg) no-repeat center center fixed; 
+  // -webkit-background-size: cover;
+  // -moz-background-size: cover;
+  // -o-background-size: cover;
+  // background-size: cover;
 }
 // ==========BANNER==================
 .bannerBox {
@@ -53,6 +67,11 @@
 	height: 270px;
 	width: 940px;
 	margin-top: 20px;
+	 //  background: url(/images/wood_BG_Vert.jpg) no-repeat center center fixed; 
+  // -webkit-background-size: cover;
+  // -moz-background-size: cover;
+  // -o-background-size: cover;
+  // background-size: cover;
 
 }
 
