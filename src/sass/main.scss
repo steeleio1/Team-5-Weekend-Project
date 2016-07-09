@@ -33,6 +33,10 @@ html {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+
+@font-face {
+	font-family: "The Noun Project";
+	src: url("../../The-Noun-Project.woff");
 }
 
 .mainBox {
@@ -83,6 +87,23 @@ html {
 	width: 270px;
 	justify-content: center;
 	align-items: center;
+	a {
+		color: black;
+		font: 24px The Noun Project;
+		text-decoration: none;
+		outline: 0;
+		margin: 0 15px;
+	}
+	.twitter:before {
+		content: "\24e3";
+	}
+	.facebook:before {
+		content: "\24d5";
+	}
+	.instagram:before {
+		content: "\24d8";
+	}
+
 }
 
 // ==========HERO IMAGE==================
