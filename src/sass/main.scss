@@ -431,18 +431,54 @@ a:hover {
 	align-items: center;
 	border-bottom: solid grey 2px;
 	font-size: 40px;
+	overflow:hidden;	
 }
 
 .appNameBox {
 	display: flex;
+	flex-direction: row;	
 	border: solid blue 1px;
 	height: 40px;
-	max-width: 670px;
+	width: 670px;
 	align-items: center;
 }
-.appNameBox td:first-child:after {
-    content:" - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - "
+
+.appName {
+	display: flex;
+	flex-basis: 10px;
+    flex-grow: 0;
+    flex-shrink: 0;
+	justify-content: center;
+	border: solid indigo 1px;
+	height: 20px;
+	align-items: center;
+	white-space:nowrap;
 }
+
+.dashes{
+	display: flex;
+	flex-basis: 300px;
+    flex-grow: 1;
+    flex-shrink: 1;
+	border: solid indigo 1px;
+	height: 20px;
+	align-items: center;
+	overflow:hidden;
+	white-space:nowrap;
+    
+}
+
+.appPrice {
+	flex-basis: 20px;
+    flex-grow: 0;
+    flex-shrink: 0;
+	display: flex;
+	border: solid indigo 1px;
+	height: 20px;
+	align-items: center;
+	white-space:nowrap;	
+}
+
 
 .appDescn-InfoButtonsBox {
 	display: flex;
@@ -482,19 +518,37 @@ a:hover {
 }
 
 .grubNameBox {
-	// display: flex;
-	// justify-content: space-between;
-	overflow:hidden;
-    white-space:nowrap;
+	display: flex;
+	flex-direction: row;	
 	border: solid blue 1px;
 	height: 40px;
-	max-width: 670px;
+	width: 670px;
 	align-items: center;
 }
 
-.grubNameBox td:first-child:after {
-    content:"  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - "
+.grubName {
+	display: flex;
+	flex-basis: 10px;
+    flex-grow: 0;
+    flex-shrink: 0;
+	justify-content: center;
+	border: solid indigo 1px;
+	height: 20px;
+	align-items: center;
+	white-space:nowrap;
 }
+
+.grubPrice {
+	flex-basis: 20px;
+    flex-grow: 0;
+    flex-shrink: 0;
+	display: flex;
+	border: solid indigo 1px;
+	height: 20px;
+	align-items: center;
+	white-space:nowrap;	
+}
+
 
 .grubDescn-InfoButtonsBox {
 	display: flex;
@@ -527,18 +581,35 @@ a:hover {
 }
 
 .beerNameBox {
-	// display: flex;
-	// justify-content: space-between;
-	 overflow:hidden;
-    white-space:nowrap;
+	display: flex;
+	flex-direction: row;	
 	border: solid blue 1px;
 	height: 40px;
 	width: 670px;
 	align-items: center;
 }
 
-.beerNameBox td:first-child:after {
-    content:" - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - "
+.beerName {
+	display: flex;
+	flex-basis: 10px;
+    flex-grow: 0;
+    flex-shrink: 0;
+	justify-content: center;
+	border: solid indigo 1px;
+	height: 20px;
+	align-items: center;
+	white-space:nowrap;
+}
+
+.beerPrice {
+	flex-basis: 20px;
+    flex-grow: 0;
+    flex-shrink: 0;
+	display: flex;
+	border: solid indigo 1px;
+	height: 20px;
+	align-items: center;
+	white-space:nowrap;		
 }
 
 .beerDescn-InfoButtonsBox {
