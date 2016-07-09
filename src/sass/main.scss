@@ -513,7 +513,7 @@
 	margin-left: 10px;
 }
 
-// =========== Reservation Form======
+// =============== Reservation Form======
 .resFormBox {
 	display: flex;
 	flex-direction: column;
@@ -647,6 +647,57 @@ select {
   transition: all 10ms;
 }
 
+//============== Games =============
+.gamesBox {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;	
+	border: solid green 1px;
+	height: 745px;
+	width: 675px;
+}
+
+.gamesTitleBox {
+	display: flex;
+	border: solid blue 1px;
+	height: 60px;
+	width: 670px;
+	align-items: center;
+	border-bottom: solid grey 2px;
+	font-size: 40px;
+}
+
+.gamesNameBox {
+	display: flex;
+	border: solid blue 1px;
+	height: 40px;
+	max-width: 670px;
+	align-items: center;
+}
+.gamesNameBox td:first-child:after {
+    content:" - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - "
+}
+
+.gamesDescn-InfoButtonsBox {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	border: solid blue 1px;
+	height: 80px;
+	width: 670px;
+	align-items: center;
+}
+
+.gamesDescBox {
+	display: flex;
+	border: solid indigo 1px;
+	height: 80px;
+	width: 470px;
+	align-items: center;
+	margin-left: 10px;
+}
+
+
 
 // ====================== Location 8 ==================
 .location8Box {
@@ -655,7 +706,7 @@ select {
 	justify-content: space-between;
 	align-items: center;
 	border: solid orange 1px;
-	height: 1260px;
+	height: 1460px;
 	width: 220px;
 	// flex: 1;
 }
