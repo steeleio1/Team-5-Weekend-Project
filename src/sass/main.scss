@@ -861,7 +861,7 @@ select {
   transition: all 10ms;
 }
 
-//============== Games =============
+//============== Games Template=============
 .gamesBox {
 	display: flex;
 	flex-direction: column;
@@ -888,14 +888,35 @@ select {
 	max-width: 670px;
 	align-items: center;
 }
-.gamesNameBox td:first-child:after {
-    content:" - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - "
+
+.gameName {
+	display: flex;
+	flex-basis: 10px;
+    flex-grow: 0;
+    flex-shrink: 0;
+	justify-content: center;
+	border: solid indigo 1px;
+	height: 20px;
+	align-items: center;
+	white-space:nowrap;
 }
+
+.gamePrice {
+	flex-basis: 20px;
+    flex-grow: 0;
+    flex-shrink: 0;
+	display: flex;
+	border: solid indigo 1px;
+	height: 20px;
+	align-items: center;
+	white-space:nowrap;
+}
+
 
 .gamesDescn-InfoButtonsBox {
 	display: flex;
 	flex-direction: row;
-	justify-content: space-between;
+	// justify-content: space-between;
 	border: solid blue 1px;
 	height: 80px;
 	width: 670px;
@@ -904,11 +925,27 @@ select {
 
 .gamesDescBox {
 	display: flex;
-	border: solid indigo 1px;
+	flex-direction: column;
+	border: solid green 1px;
 	height: 80px;
 	width: 470px;
 	align-items: center;
-	margin-left: 10px;
+}
+
+.platform {
+ 	display: flex;
+	border: solid indigo 1px;
+	height: 20px;
+	width: 469px;
+	align-items: center;
+}
+
+.gameDesc {
+ 	display: flex;
+	border: solid indigo 1px;
+	height: 59px;
+	width: 469px;
+	align-items: center;
 }
 
 // ====================== Location 8 ==================
