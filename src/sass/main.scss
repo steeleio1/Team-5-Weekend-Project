@@ -1,4 +1,5 @@
-
+// red 	  #993500;
+// orange #FFAF00
 html { 
   background: url(/images/wood_BG_Vert.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
@@ -62,7 +63,7 @@ html {
 	// border: solid red 1px;
 	height: 115px;
 	width: 940px;
-	border-bottom: solid #FFAF00 2px;
+	border-bottom: solid #FFAF00 3px;
 }
 
 .location1Box {
@@ -97,7 +98,7 @@ html {
 	justify-content: center;
 	align-items: center;
 	border: solid red 1px;
-	height: 270px;
+	height: 359px;
 	width: 940px;
 	margin-top: 20px;
 	 //  background: url(/images/wood_BG_Vert.jpg) no-repeat center center fixed; 
@@ -379,20 +380,10 @@ a:hover {
 	// flex: 1;
 }
 
-.tabsBox {
- 	display: flex;
-	flex-direction: row;	
-	border: solid yellow 1px;
-	height: 50px;
-	width: 680px;
-	border-bottom: solid grey 2px;
-}
-
-
-
 .storyTabBox {
  	display: flex;
-	border: solid green 1px;
+	// border: solid green 1px;
+	// border-bottom: 1px solid #FFAF00;
 	height: 50px;
 	width: 100px;
 	align-items: center;
@@ -403,29 +394,37 @@ a:hover {
 
 .tabsBox {
 	display: flex;
-	border: solid green 1px;
+	// border: solid green 1px;
 	flex-direction: row;
-	border: solid orange 1px;
-	border-bottom: 1px solid black;
+	border-bottom: 3px solid #FFAF00;
 	height: 50px;
 	width: 600px;
 	padding: 10px 15px 0;
+	align-items: bottom;
 	.Box {
-	    position: relative;
+	    // position: relative;
+	    display: flex;
 	    top: 1px;
+	    // height: 40px;
+	    // width: 50px;
 		background: white;
 		cursor: pointer;
 		margin: 0 15px;
 		padding: 0 10px;
-		border: 1px solid black;
-		border-bottom: 0;
+		font-size: 20px;
+		align-items: center;
+		// border: 1px solid black;
+		// border-bottom: 0;
 		@include border-radius(5px 5px 0 0);
 		//@include transition(all 0.4s ease);
 		&:hover {
-			padding: 15px 10px 20px;
-			display: table;
+			border-bottom: solid #993500 2px;
+			padding: 7px 5px 10px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
 			top: -15px;
-			font-size: 26px;
+			font-size: 22px;
 			p {
 				margin: 0;
 			}
@@ -453,14 +452,14 @@ a:hover {
 }
 
 // ===============Contents Box===============
-// .storyBox {
-// 	display: flex;
-// 	flex-direction: column;	
-// 	border: solid yellow 1px;
-// 	height: 750px;
-// 	width: 680px;
-// 	align-items: center;
-// }
+.storyBox {
+	display: flex;
+	flex-direction: column;	
+	border: solid yellow 1px;
+	height: 750px;
+	width: 680px;
+	align-items: center;
+}
 
 .contentsBox {
 	display: flex;
@@ -554,7 +553,6 @@ a:hover {
 	height: 80px;
 	width: 470px;
 	align-items: center;
-	margin-left: 10px;
 }
 
 .infoIconsBox {
@@ -624,7 +622,6 @@ a:hover {
 	height: 80px;
 	width: 470px;
 	align-items: center;
-	margin-left: 10px;
 }
 
 // ==
@@ -680,13 +677,28 @@ a:hover {
 	align-items: center;
 }
 
-.beerDescBox {
+.styleDescBox {
 	display: flex;
-	border: solid indigo 1px;
+	flex-direction: column;
+	justify-content: space-between;
+	border: solid violet 1px;
 	height: 80px;
 	width: 470px;
 	align-items: center;
-	margin-left: 10px;
+}
+.beerStyle {
+	display: flex;
+	border: solid indigo 1px;
+	height: 20px;
+	width: 469px;
+	align-items: center;
+}
+.beerDescBox {
+	display: flex;
+	border: solid indigo 1px;
+	height: 59px;
+	width: 469px;
+	align-items: center;
 }
 
 // =============== Reservation Form======
@@ -894,7 +906,9 @@ select {
 	border: solid yellow 1px;
 	height: 50px;
 	width: 210px;
-	border-bottom: solid grey 2px;
+	border-bottom: solid #FFAF00 2px;
+	color: #993500;
+
 }
 
 .photoBox {
