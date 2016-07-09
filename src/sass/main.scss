@@ -1,3 +1,12 @@
+html { 
+  background: url(/images/wood_BG_Vert.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
 .mainBox {
 	display: flex;
 	flex-direction: column;
@@ -7,7 +16,13 @@
 	margin-top: 10px;
 	height: 2280px;
 	width: 960px;
+	background: rgba(255, 255, 255, 0.9);
 	flex: 1;
+	 //  background: url(/images/wood_BG_Vert.jpg) no-repeat center center fixed; 
+  // -webkit-background-size: cover;
+  // -moz-background-size: cover;
+  // -o-background-size: cover;
+  // background-size: cover;
 }
 // ==========BANNER==================
 .bannerBox {
@@ -15,15 +30,15 @@
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
-	border: solid red 1px;
+	// border: solid red 1px;
 	height: 115px;
 	width: 940px;
-	border-bottom: solid grey 2px;
+	border-bottom: solid black 2px;
 }
 
 .location1Box {
 	display: flex;
-	border: solid orange 1px;
+	// border: solid orange 1px;
 	height: 114px;
 	width: 470px;
 	justify-content: center;
@@ -35,12 +50,13 @@
 .location2Box {
 	display: flex;
 	flex-align: right;
-	border: solid orange 1px;
+	border: solid black 1px;
 	// margin-left: 50px;
 	height: 90px;
 	width: 270px;
 	justify-content: center;
 	align-items: center;
+	background: rgba(230, 230, 230, 0.9);
 }
 
 // ==========HERO IMAGE==================
@@ -53,6 +69,11 @@
 	height: 270px;
 	width: 940px;
 	margin-top: 20px;
+	 //  background: url(/images/wood_BG_Vert.jpg) no-repeat center center fixed; 
+  // -webkit-background-size: cover;
+  // -moz-background-size: cover;
+  // -o-background-size: cover;
+  // background-size: cover;
 
 }
 
@@ -62,7 +83,7 @@
 	flex-direction: row;
 	justify-content: space-around;
 	align-items: center;
-	border: solid red 1px;
+	// border: solid red 1px;
 	height: 270px;
 	width: 940px;
 	margin-top: 20px;
@@ -73,15 +94,17 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
-	border: solid orange 1px;
+	border: solid black 1px;
 	height: 240px;
 	width: 300px;
 	align-items: center;
+		background: rgba(217, 217, 217, 0.9);
+
 }
 
 .latestNewsBox {
 	display: flex;
-	border: solid yellow 1px;
+	// border: solid yellow 1px;
 	height: 40px;
 	width: 295px;
 	align-items: center;
@@ -92,14 +115,14 @@
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	border: solid yellow 1px;
+	// border: solid yellow 1px;
 	height: 45px;
 	width: 300px;
 }
 
 .titleBox {
 	display: flex;
-	border: solid green 1px;
+	// border: solid green 1px;
 	height: 40px;
 	width: 200px;
 	align-items: center;
@@ -107,7 +130,7 @@
 
 .dateBox {
 	display: flex;
-	border: solid green 1px;
+	// border: solid green 1px;
 	height: 40px;
 	width: 50px;
 	align-items: center;
@@ -117,7 +140,7 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	border: solid yellow 1px;
+	// border: solid yellow 1px;
 	height: 130px;
 	width: 290px;
 	overflow: scroll;
@@ -125,7 +148,7 @@
 
 .readMoreBox {
 	display: flex;
-	border: solid yellow 1px;
+	// border: solid yellow 1px;
 	height: 12px;
 	width: 290px;
 	align-items: center;
@@ -235,6 +258,10 @@
 	justify-content: center;
 }
 
+a {
+	text-decoration:none;
+}
+
 .main {
 	display: flex;
 	border: solid green 1px;
@@ -299,17 +326,18 @@
 	border: solid orange 1px;
 	height: 800px;
 	width: 690px;
+	align-items: center;
 	// flex: 1;
 }
 
-// .tabsBox {
-//  	display: flex;
-// 	flex-direction: row;	
-// 	border: solid yellow 1px;
-// 	height: 50px;
-// 	width: 680px;
-// 	border-bottom: solid grey 2px;
-// }
+.tabsBox {
+ 	display: flex;
+	flex-direction: row;	
+	border: solid yellow 1px;
+	height: 50px;
+	width: 680px;
+	border-bottom: solid grey 2px;
+}
 
 .storyTabBox {
  	display: flex;
@@ -346,7 +374,17 @@
 	border-right: solid grey 2px;
 }
 
-.storyBox {
+// ===============Contents Box===============
+// .storyBox {
+// 	display: flex;
+// 	flex-direction: column;	
+// 	border: solid yellow 1px;
+// 	height: 750px;
+// 	width: 680px;
+// 	align-items: center;
+// }
+
+.contentsBox {
 	display: flex;
 	flex-direction: column;	
 	border: solid yellow 1px;
@@ -355,6 +393,339 @@
 	align-items: center;
 }
 
+.menuBox {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;	
+	border: solid green 1px;
+	height: 745px;
+	width: 675px;
+	// align-items: center;
+}
+
+.AppsTitleBox {
+	display: flex;
+	border: solid blue 1px;
+	height: 60px;
+	width: 670px;
+	align-items: center;
+	border-bottom: solid grey 2px;
+	font-size: 40px;
+}
+
+.appNameBox {
+	display: flex;
+	border: solid blue 1px;
+	height: 40px;
+	max-width: 670px;
+	align-items: center;
+}
+.appNameBox td:first-child:after {
+    content:" - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - "
+}
+
+.appDescn-InfoButtonsBox {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	border: solid blue 1px;
+	height: 80px;
+	width: 670px;
+	align-items: center;
+}
+
+.appDescBox {
+	display: flex;
+	border: solid indigo 1px;
+	height: 80px;
+	width: 470px;
+	align-items: center;
+	margin-left: 10px;
+}
+
+.infoIconsBox {
+	display: flex;
+	border: solid indigo 1px;
+	height: 80px;
+	width: 200px;
+	align-items: center;
+}
+
+.grubTitleBox {
+	display: flex;
+	border: solid blue 1px;
+	height: 60px;
+	width: 670px;
+	align-items: center;
+	border-bottom: solid grey 2px;
+	font-size: 40px;	
+}
+
+.grubNameBox {
+	// display: flex;
+	// justify-content: space-between;
+	overflow:hidden;
+    white-space:nowrap;
+	border: solid blue 1px;
+	height: 40px;
+	max-width: 670px;
+	align-items: center;
+}
+
+.grubNameBox td:first-child:after {
+    content:"  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - "
+}
+
+.grubDescn-InfoButtonsBox {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	border: solid blue 1px;
+	height: 80px;
+	width: 670px;
+	align-items: center;
+}
+
+.grubDescBox {
+	display: flex;
+	border: solid indigo 1px;
+	height: 80px;
+	width: 470px;
+	align-items: center;
+	margin-left: 10px;
+}
+
+// ==
+.beerTitleBox {
+	display: flex;
+	border: solid blue 1px;
+	height: 80px;
+	width: 670px;
+	align-items: center;
+	border-bottom: solid grey 2px;
+	font-size: 40px;	
+}
+
+.beerNameBox {
+	// display: flex;
+	// justify-content: space-between;
+	 overflow:hidden;
+    white-space:nowrap;
+	border: solid blue 1px;
+	height: 40px;
+	width: 670px;
+	align-items: center;
+}
+
+.beerNameBox td:first-child:after {
+    content:" - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - "
+}
+
+.beerDescn-InfoButtonsBox {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	border: solid blue 1px;
+	height: 80px;
+	width: 670px;
+	align-items: center;
+}
+
+.beerDescBox {
+	display: flex;
+	border: solid indigo 1px;
+	height: 80px;
+	width: 470px;
+	align-items: center;
+	margin-left: 10px;
+}
+
+// =============== Reservation Form======
+.resFormBox {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;	
+	border: solid green 1px;
+	height: 745px;
+	width: 675px;
+}
+
+.nameTitle {
+	display: flex;
+	border: solid blue 1px;
+	height: 50px;
+	width: 670px;
+	align-items: center;
+	font-size: 25px;	
+}
+
+.nameInput {
+	display: flex;
+	border: solid grey 1px;
+	height: 50px;
+	width: 670px;
+	align-items: center;	
+}
+
+.guestsTitle {
+	display: flex;
+	border: solid blue 1px;
+	height: 50px;
+	width: 670px;
+	align-items: center;
+	font-size: 25px;	
+}
+
+.guestInput {
+	display: flex;
+	border: solid grey 1px;
+	height: 50px;
+	width: 270px;
+	align-items: center;
+}
+
+.dateTitle {
+	display: flex;
+	border: solid blue 1px;
+	height: 50px;
+	width: 670px;
+	align-items: center;
+	font-size: 25px;	
+}
+
+
+#datepicker {
+	display: flex;
+	border: solid grey 1px;
+	height: 50px;
+	width: 270px;
+	align-items: center;
+}
+
+.notesTitle {
+	display: flex;
+	border: solid blue 1px;
+	height: 50px;
+	width: 670px;
+	align-items: center;
+	font-size: 25px;	
+}
+
+textarea {
+	display: flex;
+	border: solid grey 1px;
+	height: 70px;
+	width: 270px;
+}
+
+.seatingTitle {
+	display: flex;
+	border: solid blue 1px;
+	height: 50px;
+	width: 670px;
+	align-items: center;
+	font-size: 25px;	
+}
+
+select {
+	width: 170px;
+}
+
+.resButtonBox {
+	display: flex;
+	border: solid blue 1px;
+	height: 50px;
+	width: 270px;
+	align-items: center;
+
+}
+
+.button {
+  font: bold 20px Arial,sans-serif;
+  color: rgba(0, 0, 0, 0.8);
+  text-shadow: 0 0.1em 0 rgba(255, 255, 255, 0.5);
+  display: inline-block;
+  outline: none;
+  cursor: pointer;
+  padding: 0.4em 2em 0.5em;
+  border-radius: 0.3em;
+  border: 1px solid;
+  border-color: #bbbbbb #a2a2a2 #888888;
+  background-color: #eee;
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2VlZWVlZSIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2Q1ZDVkNSIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #eeeeee), color-stop(100%, #d5d5d5));
+  background-image: linear-gradient(#eeeeee, #d5d5d5);
+  box-shadow: 0 0.1em 0.5em rgba(0, 0, 0, 0.1), 0 0.1em 0.2em rgba(0, 0, 0, 0.3), 0 -0.1em 0.07em rgba(0, 0, 0, 0.3) inset, 0 0.1em 0.07em rgba(255, 255, 255, 0.2) inset;
+  transition: all 100ms;
+}
+.button:hover {
+  box-shadow: 0 0.1em 0.5em rgba(0, 0, 0, 0.4), 0 0.1em 0.2em rgba(0, 0, 0, 0.4), 0 -0.1em 0.07em rgba(0, 0, 0, 0.3) inset, 0 0.1em 0.07em rgba(255, 255, 255, 0.2) inset;
+}
+.button:active {
+  padding: 0.4em 2em 0.4em;
+  margin-top: 0.1em;
+  border-color: #a2a2a2 #bbbbbb #eee;
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2UxZTFlMSIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2VlZWVlZSIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #e1e1e1), color-stop(100%, #eeeeee));
+  background-image: linear-gradient(#e1e1e1, #eeeeee);
+  box-shadow: 0 0.1em 0.2em rgba(0, 0, 0, 0.1) inset, 0 0.1em 0.1em rgba(0, 0, 0, 0.2) inset, 0.05em 0 0.07em rgba(0, 0, 0, 0.2) inset, -0.05em 0 0.07em rgba(0, 0, 0, 0.2) inset;
+  transition: all 10ms;
+}
+
+//============== Games =============
+.gamesBox {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;	
+	border: solid green 1px;
+	height: 745px;
+	width: 675px;
+}
+
+.gamesTitleBox {
+	display: flex;
+	border: solid blue 1px;
+	height: 60px;
+	width: 670px;
+	align-items: center;
+	border-bottom: solid grey 2px;
+	font-size: 40px;
+}
+
+.gamesNameBox {
+	display: flex;
+	border: solid blue 1px;
+	height: 40px;
+	max-width: 670px;
+	align-items: center;
+}
+.gamesNameBox td:first-child:after {
+    content:" - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - "
+}
+
+.gamesDescn-InfoButtonsBox {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	border: solid blue 1px;
+	height: 80px;
+	width: 670px;
+	align-items: center;
+}
+
+.gamesDescBox {
+	display: flex;
+	border: solid indigo 1px;
+	height: 80px;
+	width: 470px;
+	align-items: center;
+	margin-left: 10px;
+}
+
+
+
 // ====================== Location 8 ==================
 .location8Box {
 	display: flex;
@@ -362,7 +733,7 @@
 	justify-content: space-between;
 	align-items: center;
 	border: solid orange 1px;
-	height: 1260px;
+	height: 1460px;
 	width: 220px;
 	// flex: 1;
 }
