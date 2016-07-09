@@ -15,3 +15,7 @@ function populate(flickrPhotos){
 
 flickr({ method: 'flickr.photos.search', search_term: 'beer' }).then(populate);
 flickr({ method: 'flickr.photos.search', search_term: 'bar food' }).then(populate);
+
+
+
+
