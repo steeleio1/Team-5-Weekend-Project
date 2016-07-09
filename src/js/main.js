@@ -19,6 +19,8 @@ function populate(flickrPhotos){
 
 get('our-story').then(function(data){ mainContent['story'] = data; });
 get('menu').then(function(data){ mainContent['menu'] = data; });
+get('reservations').then(function(data){ mainContent['reservations'] = data; });
+get('games').then(function(data){ mainContent['games'] = data; });
 
 flickr({ method: 'flickr.photos.search', search_term: 'beer' }).then(populate);
 flickr({ method: 'flickr.photos.search', search_term: 'bar food' }).then(populate);
