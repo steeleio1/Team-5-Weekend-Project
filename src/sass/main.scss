@@ -2,6 +2,7 @@
 // red 	  #993500
 // lighter red #cc4700
 // orange #e69d00
+// green #739900
 html { 
   background: url(/images/wood_BG_Vert.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
@@ -87,7 +88,7 @@ html {
 
 .location2Box {
 	display: flex;
-	border: solid #e69d00 1px;
+	border: solid #e69d00 2px;
 	height: 76px;
 	width: 200px;
 	justify-content: center;
@@ -103,12 +104,18 @@ html {
 	}
 	.twitter:before {
 		content: "\24e3";
+		color: #993500;
+
 	}
 	.facebook:before {
 		content: "\24d5";
+		color: #993500;
+
 	}
 	.instagram:before {
 		content: "\24d8";
+		color: #993500;
+
 	}
 }
 
@@ -514,13 +521,14 @@ a:hover {
 	height: 750px;
 	width: 680px;
 	align-items: center;
+	background: rgba(221, 179, 136, 0.8);
 }
 
 .menuBox {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
-	border: solid green 1px;
+	// border: solid green 1px;
 	height: 745px;
 	width: 675px;
 	// align-items: center;
@@ -528,19 +536,20 @@ a:hover {
 
 .AppsTitleBox {
 	display: flex;
-	border: solid blue 1px;
+	// border: solid blue 1px;
 	height: 60px;
 	width: 670px;
 	align-items: center;
-	border-bottom: solid grey 2px;
+	border-bottom: solid #e69d00 3px;
 	font-size: 40px;
 	overflow:hidden;
+	color: #993500;
 }
 
 .appNameBox {
 	display: flex;
 	flex-direction: row;
-	border: solid blue 1px;
+	// border: solid blue 1px;
 	height: 40px;
 	width: 670px;
 	align-items: center;
@@ -552,10 +561,11 @@ a:hover {
     flex-grow: 0;
     flex-shrink: 0;
 	justify-content: center;
-	border: solid indigo 1px;
+	// border: solid indigo 1px;
 	height: 20px;
 	align-items: center;
 	white-space:nowrap;
+	color: #993500;
 }
 
 .dashes{
@@ -563,11 +573,12 @@ a:hover {
 	flex-basis: 300px;
     flex-grow: 1;
     flex-shrink: 1;
-	border: solid indigo 1px;
+	// border: solid indigo 1px;
 	height: 20px;
 	align-items: center;
 	overflow:hidden;
 	white-space:nowrap;
+	color: #e69d00;
 }
 
 .appPrice {
@@ -575,10 +586,11 @@ a:hover {
     flex-grow: 0;
     flex-shrink: 0;
 	display: flex;
-	border: solid indigo 1px;
+	// border: solid indigo 1px;
 	height: 20px;
 	align-items: center;
 	white-space:nowrap;
+	color: #739900;
 }
 
 
@@ -586,7 +598,7 @@ a:hover {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	border: solid blue 1px;
+	// border: solid blue 1px;
 	height: 80px;
 	width: 670px;
 	align-items: center;
@@ -594,34 +606,43 @@ a:hover {
 
 .appDescBox {
 	display: flex;
-	border: solid indigo 1px;
+	// border: solid indigo 1px;
 	height: 80px;
-	width: 470px;
+	width: 560px;
 	align-items: center;
+		color: #993500;
 }
 
 .infoIconsBox {
 	display: flex;
-	border: solid indigo 1px;
-	height: 80px;
-	width: 200px;
+	justify-content: center;
+	justify-content: space-around;
+	// border: solid indigo 1px;
+	height: 50px;
+	width: 100px;
 	align-items: center;
+	border-left: solid #e69d00 2px;
+	.fa {
+		color: #993500;
+	}
 }
+
 
 .grubTitleBox {
 	display: flex;
-	border: solid blue 1px;
+	// border: solid blue 1px;
 	height: 60px;
 	width: 670px;
 	align-items: center;
-	border-bottom: solid grey 2px;
+	border-bottom: solid #e69d00 3px;
 	font-size: 40px;
+	color: #993500;
 }
 
 .grubNameBox {
 	display: flex;
 	flex-direction: row;
-	border: solid blue 1px;
+	// border: solid blue 1px;
 	height: 40px;
 	width: 670px;
 	align-items: center;
@@ -633,10 +654,11 @@ a:hover {
     flex-grow: 0;
     flex-shrink: 0;
 	justify-content: center;
-	border: solid indigo 1px;
+	// border: solid indigo 1px;
 	height: 20px;
 	align-items: center;
 	white-space:nowrap;
+	color: #993500;
 }
 
 .grubPrice {
@@ -644,10 +666,12 @@ a:hover {
     flex-grow: 0;
     flex-shrink: 0;
 	display: flex;
-	border: solid indigo 1px;
+	// border: solid indigo 1px;
 	height: 20px;
 	align-items: center;
 	white-space:nowrap;
+	color: #739900;
+
 }
 
 // 	font-size: 40px;
@@ -658,7 +682,7 @@ a:hover {
 	// justify-content: space-between;
 	overflow:hidden;
     white-space:nowrap;
-	border: solid blue 1px;
+	// border: solid blue 1px;
 	height: 40px;
 	max-width: 670px;
 	align-items: center;
@@ -668,7 +692,7 @@ a:hover {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	border: solid blue 1px;
+	// border: solid blue 1px;
 	height: 80px;
 	width: 670px;
 	align-items: center;
@@ -676,27 +700,29 @@ a:hover {
 
 .grubDescBox {
 	display: flex;
-	border: solid indigo 1px;
+	// border: solid indigo 1px;
 	height: 80px;
 	width: 470px;
 	align-items: center;
+	color: #993500;
 }
 
 // ==
 .beerTitleBox {
 	display: flex;
-	border: solid blue 1px;
+	// border: solid blue 1px;
 	height: 80px;
 	width: 670px;
 	align-items: center;
-	border-bottom: solid grey 2px;
+	border-bottom: solid #e69d00 3px;
 	font-size: 40px;
+	color: #993500;
 }
 
 .beerNameBox {
 	display: flex;
 	flex-direction: row;
-	border: solid blue 1px;
+	// border: solid blue 1px;
 	height: 40px;
 	width: 670px;
 	align-items: center;
@@ -708,10 +734,11 @@ a:hover {
     flex-grow: 0;
     flex-shrink: 0;
 	justify-content: center;
-	border: solid indigo 1px;
+	// border: solid indigo 1px;
 	height: 20px;
 	align-items: center;
 	white-space:nowrap;
+	color: #993500;
 }
 
 .beerPrice {
@@ -719,10 +746,12 @@ a:hover {
     flex-grow: 0;
     flex-shrink: 0;
 	display: flex;
-	border: solid indigo 1px;
+	// border: solid indigo 1px;
 	height: 20px;
 	align-items: center;
 	white-space:nowrap;
+	color: #739900;
+
 }
 
 
@@ -730,7 +759,7 @@ a:hover {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	border: solid blue 1px;
+	// border: solid blue 1px;
 	height: 80px;
 	width: 670px;
 	align-items: center;
@@ -739,25 +768,35 @@ a:hover {
 .styleDescBox {
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
-	border: solid violet 1px;
+	// justify-content: space-between;
+	// border: solid violet 1px;
 	height: 80px;
 	width: 470px;
-	align-items: center;
+	// align-items: center;
 }
 .beerStyle {
+	flex-basis: 20px;
+    flex-grow: 0;
+    flex-shrink: 0;
 	display: flex;
-	border: solid indigo 1px;
+	// border: solid indigo 1px;
 	height: 20px;
-	width: 469px;
+	// width: 469px;
 	align-items: center;
+	white-space:nowrap;
+	border-bottom: solid #e69d00 1px;
+	color: #993500;
+
 }
+
+
 .beerDescBox {
 	display: flex;
-	border: solid indigo 1px;
+	// border: solid indigo 1px;
 	height: 59px;
 	width: 469px;
 	align-items: center;
+	color: #993500;
 }
 
 // =============== Reservation Form======
