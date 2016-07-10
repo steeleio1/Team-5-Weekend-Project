@@ -1,11 +1,11 @@
 // red 	  #993500
 // lighter red #cc4700
 // orange #e69d00
-
 // green #739900
 
 // *{font-family: 'Patrick Hand', cursive;}
 *{font-family: 'Alice', serif;}
+
 html { 
   background: url(/images/wood_BG_Vert.jpg) no-repeat center center fixed; 
 
@@ -539,20 +539,18 @@ a:hover {
 	height: 1950px;
 	width: 695px;
 	align-items: center;
-	// background: rgba(221, 179, 136, 0.8);
+margin-top: 5px;
 	flex: 1px;
 }
 
 .menuBox {
 	display: flex;
 	flex-direction: column;
-	// justify-content: space-around;
 	// border: solid green 1px;
 	height: 1250px;
 	width: 695px;
-	// overflow: scroll;
 	flex: 1;
-	// align-items: center;
+	background: rgba(221, 179, 136, 0.8);
 }
 
 .AppsTitleBox {
@@ -817,96 +815,113 @@ a:hover {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
-	border: solid green 1px;
-	height: 745px;
+	// border: solid green 1px;
+	height: 645px;
 	width: 675px;
 	background: rgba(221, 179, 136, 0.8);
 }
 
 .nameTitle {
 	display: flex;
-	border: solid blue 1px;
+	// border: solid blue 1px;
 	height: 50px;
 	width: 670px;
 	align-items: center;
 	font-size: 25px;
+	color: #993500;
 }
 
-.nameInput {
+#nameInput {
 	display: flex;
-	border: solid grey 1px;
+	border: solid #e69d00 2px;
 	height: 50px;
-	width: 670px;
+	width: 650px;
 	align-items: center;
+	color: #993500;
+	background: rgba(255, 204, 153, 0.9);
 }
 
 .guestsTitle {
 	display: flex;
-	border: solid blue 1px;
+	// border: solid blue 1px;
 	height: 50px;
 	width: 670px;
 	align-items: center;
 	font-size: 25px;
+	color: #993500;
 }
 
-.guestInput {
+#guestInput {
 	display: flex;
-	border: solid grey 1px;
+	border: solid #e69d00 2px;
 	height: 50px;
 	width: 270px;
 	align-items: center;
+	color: #993500;
+	background: rgba(255, 204, 153, 0.9);
 }
 
 .dateTitle {
 	display: flex;
-	border: solid blue 1px;
+	// border: solid blue 1px;
 	height: 50px;
 	width: 670px;
 	align-items: center;
 	font-size: 25px;
+	color: #993500;
 }
 
 
 #datepicker {
 	display: flex;
-	border: solid grey 1px;
+	border: solid #e69d00 2px;
 	height: 50px;
 	width: 270px;
 	align-items: center;
+	color: #993500;
+	background: rgba(255, 204, 153, 0.9);
 }
 
 .notesTitle {
 	display: flex;
-	border: solid blue 1px;
+	// border: solid blue 1px;
 	height: 50px;
 	width: 670px;
 	align-items: center;
 	font-size: 25px;
+	color: #993500;
 }
 
 textarea {
 	display: flex;
-	border: solid grey 1px;
+	border: solid #e69d00 2px;
 	height: 70px;
 	width: 270px;
+	color: #993500;
+	background: rgba(255, 204, 153, 0.9);
 }
 
 .seatingTitle {
 	display: flex;
-	border: solid blue 1px;
+	// border: solid blue 1px;
 	height: 50px;
 	width: 670px;
 	align-items: center;
 	font-size: 25px;
+	color: #993500;
 }
 
 select {
 	width: 170px;
+	color: #993500;
 }
 
+option {
+		color: #993500;
+}
 .resButtonBox {
 	display: flex;
-	border: solid blue 1px;
+	// border: solid blue 1px;
 	height: 50px;
 	width: 270px;
 	align-items: center;
@@ -914,8 +929,8 @@ select {
 }
 
 .button {
-  font: bold 20px Arial,sans-serif;
-  color: rgba(0, 0, 0, 0.8);
+  // font: bold 20px Arial,sans-serif;
+  color: rgba(153, 53, 0, 0.8);
   text-shadow: 0 0.1em 0 rgba(255, 255, 255, 0.5);
   display: inline-block;
   outline: none;
@@ -951,30 +966,38 @@ select {
 .gamesBox {
 	display: flex;
 	flex-direction: column;
-	// justify-content: space-around;
-	border: solid green 1px;
-	height: 745px;
+	justify-content: space-around;
+	// border: solid green 1px;
+	height: 550px;
 	width: 675px;
 	background: rgba(221, 179, 136, 0.8);
 	// flex: 1;
+	// 	p {
+	// 	font-family: 'Press Start 2P', cursive;
+	// }
 }
 
 .gamesTitleBox {
 	display: flex;
-	border: solid blue 1px;
+	// border: solid blue 1px;
 	height: 40px;
 	width: 670px;
 	align-items: center;
-	border-bottom: solid grey 2px;
+	border-bottom: solid #e69d00 3px;
 	font-size: 40px;
+	color: #993500;
+	p {
+		font-family: 'Press Start 2P', cursive;
+	}
 }
 
 .gamesNameBox {
 	display: flex;
-	border: solid blue 1px;
+	// border: solid blue 1px;
 	height: 30px;
 	max-width: 670px;
 	align-items: center;
+
 }
 
 .gameName {
@@ -983,10 +1006,12 @@ select {
     flex-grow: 0;
     flex-shrink: 0;
 	justify-content: center;
-	border: solid indigo 1px;
+	// border: solid indigo 1px;
 	height: 17px;
 	align-items: center;
 	white-space:nowrap;
+	font-size: 19px;
+	color: #993500;
 }
 
 .gamePrice {
@@ -994,10 +1019,12 @@ select {
     flex-grow: 0;
     flex-shrink: 0;
 	display: flex;
-	border: solid indigo 1px;
+	// border: solid indigo 1px;
 	height: 17px;
 	align-items: center;
 	white-space:nowrap;
+	color: #739900;
+	font-size: 17px;
 }
 
 
@@ -1005,35 +1032,39 @@ select {
 	display: flex;
 	flex-direction: row;
 	// justify-content: space-between;
-	border: solid blue 1px;
+	// border: solid blue 1px;
 	height: 80px;
 	width: 670px;
 	align-items: center;
+	color: #993500;
 }
 
 .gamesDescBox {
 	display: flex;
 	flex-direction: column;
-	border: solid green 1px;
+	// border: solid green 1px;
 	height: 80px;
 	width: 470px;
 	align-items: center;
+
 }
 
 .platform {
  	display: flex;
-	border: solid indigo 1px;
+	// border: solid indigo 1px;
 	height: 20px;
 	width: 469px;
 	align-items: center;
+	font-size: 15px;
 }
 
 .gameDesc {
  	display: flex;
-	border: solid indigo 1px;
+	// border: solid indigo 1px;
 	height: 59px;
 	width: 469px;
 	align-items: center;
+	font-size: 13px;
 }
 
 // ====================== Location 8 ==================
@@ -1068,7 +1099,7 @@ select {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	border: solid #FFAF00 3px;
+	// border: solid #FFAF00 3px;
 	height: 216px;
 	width: 216px;
 	img {
