@@ -178,7 +178,7 @@ html {
 .titleAndDateBox {
 	display: flex;
 	flex-direction: row;
-	justify-content: space-around;
+	justify-content: space-between;
 	// border: solid yellow 1px;
 	height: 45px;
 	width: 300px;
@@ -296,6 +296,7 @@ color: #e69d00;
 	align-items: center;
 	margin-bottom: 5px;
 	color: #993500;
+	font-size: 13px;
 }
 
 
@@ -449,17 +450,17 @@ a:hover {
 // 	border-bottom: solid grey 2px;
 // }
 
-.storyTabBox {
- 	display: flex;
-	border: solid green 1px;
-	// border-bottom: 1px solid #FFAF00;
-	height: 50px;
-	width: 100px;
-	align-items: center;
-	border-top: solid grey 2px;
-	border-left: solid grey 2px;
-	border-right: solid grey 2px;
-}
+// .storyTabBox {
+//  	display: flex;
+// 	border: solid green 1px;
+// 	// border-bottom: 1px solid #FFAF00;
+// 	height: 50px;
+// 	width: 100px;
+// 	align-items: center;
+// 	border-top: solid grey 2px;
+// 	border-left: solid grey 2px;
+// 	border-right: solid grey 2px;
+// }
 
 .tabsBox {
 	display: flex;
@@ -522,11 +523,13 @@ a:hover {
 .storyBox {
 	display: flex;
 	flex-direction: column;
-	border: solid yellow 1px;
-	height: 1000px;
+	// border: solid yellow 1px;
+	height: 500px;
 	width: 680px;
 	align-items: center;
-	flex: 1;
+	background: rgba(221, 179, 136, 0.8);
+	font-size: 15px;
+	color: #993500;	
 }
 
 .contentsBox {
@@ -1039,7 +1042,7 @@ select {
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: center;
-	border: solid orange 1px;
+	// border: solid orange 1px;
 	height: 1460px;
 	width: 220px;
 	margin-top: 9px;
@@ -1049,12 +1052,13 @@ select {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	border: solid yellow 1px;
+	// border: solid yellow 1px;
 	height: 50px;
 	width: 210px;
 	border-bottom: solid #FFAF00 3px;
 	color: #993500;
 	font-size: 20px;
+	background: rgba(221, 179, 136, 0.8);
 	p {
 		margin: 0px;
 	}
