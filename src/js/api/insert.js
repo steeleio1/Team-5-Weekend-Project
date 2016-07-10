@@ -6,6 +6,7 @@ function insert(locale, data){
     let map = $('.gMapsBox iframe'),
         apps = data[1].appetizers,
         beer = data[3].Beer,
+        games = data[3].games,
         grub = data[3].entrees,
         news = data[2],
         todaysSpecial = data[0].menu_item_id,
@@ -57,6 +58,21 @@ function insert(locale, data){
              .find('.beerPrice').text('$' + draught.price);
             d.find('.beerStyle p').text(draught.style).end()
              .find('.beerDescBox p').text(draught.description);
+            content.append(`${n[0].outerHTML}\n${d[0].outerHTML}\n`);
+        });
+
+        content = locale['games'].find('.gamesContent');
+        name = content.find('.gamesNameBox');
+        description = content.find('.gamesDescn-InfoButtonsBox');
+        content.empty();
+        console.log(content.html(), name, description);
+        games.forEach(function(game){
+            n = name.clone();
+            d = description.clone();
+            n.find('.gameName').text(game.item).end()
+             .find('.gamePrice').text('$' + game.price);
+            d.find('.platform p').html(`Played on: <span>${game.platform}</span> | Rated: <span>${game.rating}</span>`).end()
+             .find('.gameDesc p').text(game.description);
             content.append(`${n[0].outerHTML}\n${d[0].outerHTML}\n`);
         });
 
