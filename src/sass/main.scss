@@ -3,6 +3,9 @@
 // lighter red #cc4700
 // orange #e69d00
 // green #739900
+
+// *{font-family: 'Patrick Hand', cursive;}
+*{font-family: 'Alice', serif;}
 html { 
   background: url(/images/wood_BG_Vert.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
@@ -82,8 +85,9 @@ html {
 	align-items: center;
 	font-size: 60px;
 	color: #993500;
-
-
+	p {
+		font-family: 'Limelight', cursive;
+	}
 }
 
 .location2Box {
@@ -522,6 +526,7 @@ a:hover {
 	width: 680px;
 	align-items: center;
 	background: rgba(221, 179, 136, 0.8);
+	flex: 1px;
 }
 
 .menuBox {
