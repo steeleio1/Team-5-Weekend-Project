@@ -1,9 +1,8 @@
 import $ from 'jquery';
-import {mainContent} from '../main';
 import {google_key} from '../cred';
 
 function insert(locale, data){
-    data = data || [0, 0, 0, 0];
+    data = data || [0, 0, null, 0];
     let map = $('.gMapsBox iframe'),
         apps = data[1].appetizers,
         beer = data[3].Beer,
@@ -11,16 +10,11 @@ function insert(locale, data){
         news = data[2],
         todaysSpecial = data[0].menu_item_id,
         content;
-        console.log("data", data, "apps: ", apps, "beer: ", beer, "grub: ", grub, "news", news, "special", todaysSpecial);
-    if (map.attr('src') === undefined)
-        map.attr("src", `https://www.google.com/maps/embed/v1/place?key=${google_key}&q=The+Iron+Yard,Atlanta+GA`);
-    console.log(data);
-    $('.location4Box .titleBox p').text(news.title);
-    $('.location4Box .dateBox p').text(news.date_published);
-    $('.location4Box .paragraphBox p').text(news.post);
+        console.log("data: ", data, "apps: ", apps, "beer: ", beer, "grub: ", grub, "news: ", news, "special: ", todaysSpecial);
 
     if (locale) {
         let n, name, d, description;
+
         content = locale['menu'].find('.appsContent');
         name = content.find('.appNameBox');
         description = content.find('.appDescn-InfoButtonsBox');
@@ -65,7 +59,11 @@ function insert(locale, data){
              .find('.beerDescBox p').text(draught.description);
             content.append(`${n[0].outerHTML}\n${d[0].outerHTML}\n`);
         });
-    }
+
+        $('.location4Box .titleBox p').text(news.title);
+        $('.location4Box .dateBox p').text(news.date_published);
+        $('.location4Box .paragraphBox p').text(news.post);
+    } else map.attr("src", `https://www.google.com/maps/embed/v1/place?key=${google_key}&q=The+Iron+Yard,Atlanta+GA`);
 }
 
 export default insert;
