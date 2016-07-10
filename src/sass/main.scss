@@ -1,8 +1,14 @@
 // red 	  #993500
 // lighter red #cc4700
 // orange #e69d00
-html {
-  background: url(/images/wood_BG_Vert.jpg) no-repeat center center fixed;
+// green #739900
+
+// *{font-family: 'Patrick Hand', cursive;}
+*{font-family: 'Alice', serif;}
+
+html { 
+  background: url(/images/wood_BG_Vert.jpg) no-repeat center center fixed; 
+
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -79,13 +85,14 @@ html {
 	align-items: center;
 	font-size: 60px;
 	color: #993500;
-
-
+	p {
+		font-family: 'Limelight', cursive;
+	}
 }
 
 .location2Box {
 	display: flex;
-	border: solid #e69d00 1px;
+	border: solid #e69d00 2px;
 	height: 76px;
 	width: 200px;
 	justify-content: center;
@@ -101,12 +108,18 @@ html {
 	}
 	.twitter:before {
 		content: "\24e3";
+		color: #993500;
+
 	}
 	.facebook:before {
 		content: "\24d5";
+		color: #993500;
+
 	}
 	.instagram:before {
 		content: "\24d8";
+		color: #993500;
+
 	}
 }
 
@@ -165,7 +178,7 @@ html {
 .titleAndDateBox {
 	display: flex;
 	flex-direction: row;
-	justify-content: space-around;
+	justify-content: space-between;
 	// border: solid yellow 1px;
 	height: 45px;
 	width: 300px;
@@ -283,6 +296,7 @@ color: #e69d00;
 	align-items: center;
 	margin-bottom: 5px;
 	color: #993500;
+	font-size: 13px;
 }
 
 
@@ -410,7 +424,7 @@ a:hover {
 	justify-content: space-between;
 	// align-items: center;
 	// border: solid red 1px;
-	height: 1840px;
+	height: 2000px;
 	width: 940px;
 	margin-top: 20px;
 }
@@ -421,32 +435,32 @@ a:hover {
 	display: flex;
 	flex-direction: column;
 	// border: solid orange 1px;
-	height: 800px;
-	width: 690px;
+	height: 1550px;
+	width: 710px;
 	align-items: center;
 	// flex: 1;
 }
 
-.tabsBox {
- 	display: flex;
-	flex-direction: row;
-	border: solid yellow 1px;
-	height: 50px;
-	width: 680px;
-	border-bottom: solid grey 2px;
-}
+// .tabsBox {
+//  	display: flex;
+// 	flex-direction: row;
+// 	// border: solid yellow 1px;
+// 	height: 50px;
+// 	width: 680px;
+// 	border-bottom: solid grey 2px;
+// }
 
-.storyTabBox {
- 	display: flex;
-	// border: solid green 1px;
-	// border-bottom: 1px solid #FFAF00;
-	height: 50px;
-	width: 100px;
-	align-items: center;
-	border-top: solid grey 2px;
-	border-left: solid grey 2px;
-	border-right: solid grey 2px;
-}
+// .storyTabBox {
+//  	display: flex;
+// 	border: solid green 1px;
+// 	// border-bottom: 1px solid #FFAF00;
+// 	height: 50px;
+// 	width: 100px;
+// 	align-items: center;
+// 	border-top: solid grey 2px;
+// 	border-left: solid grey 2px;
+// 	border-right: solid grey 2px;
+// }
 
 .tabsBox {
 	display: flex;
@@ -510,46 +524,52 @@ a:hover {
 	display: flex;
 	flex-direction: column;
 	// border: solid yellow 1px;
-	height: 750px;
+	height: 500px;
 	width: 680px;
 	align-items: center;
+	background: rgba(221, 179, 136, 0.8);
+	font-size: 15px;
+	color: #993500;	
 }
 
 .contentsBox {
 	display: flex;
 	flex-direction: column;
-	// border: solid yellow 1px;
-	height: 750px;
-	width: 680px;
+	// border: solid yellow 3px;
+	height: 1950px;
+	width: 695px;
 	align-items: center;
+margin-top: 5px;
+	flex: 1px;
 }
 
 .menuBox {
 	display: flex;
 	flex-direction: column;
-	justify-content: space-around;
-	border: solid green 1px;
-	height: 745px;
-	width: 675px;
-	// align-items: center;
+	// border: solid green 1px;
+	height: 1250px;
+	width: 695px;
+	flex: 1;
+	background: rgba(221, 179, 136, 0.8);
 }
 
 .AppsTitleBox {
 	display: flex;
-	border: solid blue 1px;
-	height: 60px;
+	// border: solid blue 1px;
+	height: 40px;
 	width: 670px;
 	align-items: center;
-	border-bottom: solid grey 2px;
+	border-bottom: solid #e69d00 3px;
 	font-size: 40px;
 	overflow:hidden;
+	color: #993500;
 }
 
 .appNameBox {
 	display: flex;
 	flex-direction: row;
-	border: solid blue 1px;
-	height: 40px;
+	// border: solid blue 1px;
+	height: 30px;
 	width: 670px;
 	align-items: center;
 }
@@ -560,10 +580,12 @@ a:hover {
     flex-grow: 0;
     flex-shrink: 0;
 	justify-content: center;
-	border: solid indigo 1px;
-	height: 20px;
+	// border: solid indigo 1px;
+	height: 17px;
 	align-items: center;
 	white-space:nowrap;
+	color: #993500;
+	font-size:17px;
 }
 
 .dashes{
@@ -571,11 +593,12 @@ a:hover {
 	flex-basis: 300px;
     flex-grow: 1;
     flex-shrink: 1;
-	border: solid indigo 1px;
+	// border: solid indigo 1px;
 	height: 20px;
 	align-items: center;
 	overflow:hidden;
 	white-space:nowrap;
+	color: #e69d00;
 }
 
 .appPrice {
@@ -583,10 +606,11 @@ a:hover {
     flex-grow: 0;
     flex-shrink: 0;
 	display: flex;
-	border: solid indigo 1px;
-	height: 20px;
+	// border: solid indigo 1px;
+	height: 17px;
 	align-items: center;
 	white-space:nowrap;
+	color: #739900;
 }
 
 
@@ -594,45 +618,57 @@ a:hover {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	border: solid blue 1px;
-	height: 80px;
+	// border: solid blue 1px;
+	height: 70px;
 	width: 670px;
 	align-items: center;
 }
 
 .appDescBox {
 	display: flex;
-	border: solid indigo 1px;
-	height: 80px;
-	width: 470px;
+	// border: solid indigo 1px;
+	height: 70px;
+	width: 560px;
 	align-items: center;
+	color: #993500;
+	font-size: 13px;
 }
 
 .infoIconsBox {
 	display: flex;
-	border: solid indigo 1px;
-	height: 80px;
-	width: 200px;
+	justify-content: center;
+	justify-content: space-around;
+	// border: solid indigo 1px;
+	height: 50px;
+	width: 100px;
 	align-items: center;
+	border-left: solid #e69d00 2px;
+	.fa {
+		color: #993500;
+	}
 }
+
 
 .grubTitleBox {
 	display: flex;
-	border: solid blue 1px;
-	height: 60px;
+	// border: solid blue 1px;
+	height: 40px;
 	width: 670px;
 	align-items: center;
-	border-bottom: solid grey 2px;
+	border-bottom: solid #e69d00 3px;
 	font-size: 40px;
+	color: #993500;
 }
 
 .grubNameBox {
 	display: flex;
+	white-space:nowrap;
 	flex-direction: row;
-	border: solid blue 1px;
-	height: 40px;
+	// border: solid blue 1px;
+	height: 30px;
 	width: 670px;
 	align-items: center;
+	font-size: 17px;
 }
 
 .grubName {
@@ -641,10 +677,11 @@ a:hover {
     flex-grow: 0;
     flex-shrink: 0;
 	justify-content: center;
-	border: solid indigo 1px;
-	height: 20px;
+	// border: solid indigo 1px;
+	height: 17px;
 	align-items: center;
 	white-space:nowrap;
+	color: #993500;
 }
 
 .grubPrice {
@@ -652,59 +689,51 @@ a:hover {
     flex-grow: 0;
     flex-shrink: 0;
 	display: flex;
-	border: solid indigo 1px;
-	height: 20px;
+	// border: solid indigo 1px;
+	height: 17px;
 	align-items: center;
 	white-space:nowrap;
+	color: #739900;
+
 }
 
-// 	font-size: 40px;
-// }
-
-.grubNameBox {
-	// display: flex;
-	// justify-content: space-between;
-	overflow:hidden;
-    white-space:nowrap;
-	border: solid blue 1px;
-	height: 40px;
-	max-width: 670px;
-	align-items: center;
-}
 
 .grubDescn-InfoButtonsBox {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	border: solid blue 1px;
-	height: 80px;
+	// border: solid blue 1px;
+	height: 70px;
 	width: 670px;
 	align-items: center;
 }
 
 .grubDescBox {
 	display: flex;
-	border: solid indigo 1px;
-	height: 80px;
+	// border: solid indigo 1px;
+	height: 70px;
 	width: 470px;
 	align-items: center;
+	color: #993500;
+	font-size: 13px;
 }
 
 // ==
 .beerTitleBox {
 	display: flex;
-	border: solid blue 1px;
+	// border: solid blue 1px;
 	height: 80px;
 	width: 670px;
 	align-items: center;
-	border-bottom: solid grey 2px;
+	border-bottom: solid #e69d00 3px;
 	font-size: 40px;
+	color: #993500;
 }
 
 .beerNameBox {
 	display: flex;
 	flex-direction: row;
-	border: solid blue 1px;
+	// border: solid blue 1px;
 	height: 40px;
 	width: 670px;
 	align-items: center;
@@ -716,10 +745,11 @@ a:hover {
     flex-grow: 0;
     flex-shrink: 0;
 	justify-content: center;
-	border: solid indigo 1px;
+	// border: solid indigo 1px;
 	height: 20px;
 	align-items: center;
 	white-space:nowrap;
+	color: #993500;
 }
 
 .beerPrice {
@@ -727,10 +757,12 @@ a:hover {
     flex-grow: 0;
     flex-shrink: 0;
 	display: flex;
-	border: solid indigo 1px;
+	// border: solid indigo 1px;
 	height: 20px;
 	align-items: center;
 	white-space:nowrap;
+	color: #739900;
+
 }
 
 
@@ -738,7 +770,7 @@ a:hover {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	border: solid blue 1px;
+	// border: solid blue 1px;
 	height: 80px;
 	width: 670px;
 	align-items: center;
@@ -747,25 +779,35 @@ a:hover {
 .styleDescBox {
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
-	border: solid violet 1px;
+	// justify-content: space-between;
+	// border: solid violet 1px;
 	height: 80px;
 	width: 470px;
-	align-items: center;
+	// align-items: center;
 }
 .beerStyle {
+	flex-basis: 20px;
+    flex-grow: 0;
+    flex-shrink: 0;
 	display: flex;
-	border: solid indigo 1px;
+	// border: solid indigo 1px;
 	height: 20px;
-	width: 469px;
+	// width: 469px;
 	align-items: center;
+	white-space:nowrap;
+	border-bottom: solid #e69d00 1px;
+	color: #993500;
+
 }
+
+
 .beerDescBox {
 	display: flex;
-	border: solid indigo 1px;
+	// border: solid indigo 1px;
 	height: 59px;
 	width: 469px;
 	align-items: center;
+	color: #993500;
 }
 
 // =============== Reservation Form======
@@ -773,95 +815,113 @@ a:hover {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
-	border: solid green 1px;
-	height: 745px;
+	// border: solid green 1px;
+	height: 645px;
 	width: 675px;
+	background: rgba(221, 179, 136, 0.8);
 }
 
 .nameTitle {
 	display: flex;
-	border: solid blue 1px;
+	// border: solid blue 1px;
 	height: 50px;
 	width: 670px;
 	align-items: center;
 	font-size: 25px;
+	color: #993500;
 }
 
-.nameInput {
+#nameInput {
 	display: flex;
-	border: solid grey 1px;
+	border: solid #e69d00 2px;
 	height: 50px;
-	width: 670px;
+	width: 650px;
 	align-items: center;
+	color: #993500;
+	background: rgba(255, 204, 153, 0.9);
 }
 
 .guestsTitle {
 	display: flex;
-	border: solid blue 1px;
+	// border: solid blue 1px;
 	height: 50px;
 	width: 670px;
 	align-items: center;
 	font-size: 25px;
+	color: #993500;
 }
 
-.guestInput {
+#guestInput {
 	display: flex;
-	border: solid grey 1px;
+	border: solid #e69d00 2px;
 	height: 50px;
 	width: 270px;
 	align-items: center;
+	color: #993500;
+	background: rgba(255, 204, 153, 0.9);
 }
 
 .dateTitle {
 	display: flex;
-	border: solid blue 1px;
+	// border: solid blue 1px;
 	height: 50px;
 	width: 670px;
 	align-items: center;
 	font-size: 25px;
+	color: #993500;
 }
 
 
 #datepicker {
 	display: flex;
-	border: solid grey 1px;
+	border: solid #e69d00 2px;
 	height: 50px;
 	width: 270px;
 	align-items: center;
+	color: #993500;
+	background: rgba(255, 204, 153, 0.9);
 }
 
 .notesTitle {
 	display: flex;
-	border: solid blue 1px;
+	// border: solid blue 1px;
 	height: 50px;
 	width: 670px;
 	align-items: center;
 	font-size: 25px;
+	color: #993500;
 }
 
 textarea {
 	display: flex;
-	border: solid grey 1px;
+	border: solid #e69d00 2px;
 	height: 70px;
 	width: 270px;
+	color: #993500;
+	background: rgba(255, 204, 153, 0.9);
 }
 
 .seatingTitle {
 	display: flex;
-	border: solid blue 1px;
+	// border: solid blue 1px;
 	height: 50px;
 	width: 670px;
 	align-items: center;
 	font-size: 25px;
+	color: #993500;
 }
 
 select {
 	width: 170px;
+	color: #993500;
 }
 
+option {
+		color: #993500;
+}
 .resButtonBox {
 	display: flex;
-	border: solid blue 1px;
+	// border: solid blue 1px;
 	height: 50px;
 	width: 270px;
 	align-items: center;
@@ -869,8 +929,8 @@ select {
 }
 
 .button {
-  font: bold 20px Arial,sans-serif;
-  color: rgba(0, 0, 0, 0.8);
+  // font: bold 20px Arial,sans-serif;
+  color: rgba(153, 53, 0, 0.8);
   text-shadow: 0 0.1em 0 rgba(255, 255, 255, 0.5);
   display: inline-block;
   outline: none;
@@ -907,27 +967,37 @@ select {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
-	border: solid green 1px;
-	height: 745px;
+	// border: solid green 1px;
+	height: 550px;
 	width: 675px;
+	background: rgba(221, 179, 136, 0.8);
+	// flex: 1;
+	// 	p {
+	// 	font-family: 'Press Start 2P', cursive;
+	// }
 }
 
 .gamesTitleBox {
 	display: flex;
-	border: solid blue 1px;
-	height: 60px;
+	// border: solid blue 1px;
+	height: 40px;
 	width: 670px;
 	align-items: center;
-	border-bottom: solid grey 2px;
+	border-bottom: solid #e69d00 3px;
 	font-size: 40px;
+	color: #993500;
+	p {
+		font-family: 'Press Start 2P', cursive;
+	}
 }
 
 .gamesNameBox {
 	display: flex;
-	border: solid blue 1px;
-	height: 40px;
+	// border: solid blue 1px;
+	height: 30px;
 	max-width: 670px;
 	align-items: center;
+
 }
 
 .gameName {
@@ -936,10 +1006,12 @@ select {
     flex-grow: 0;
     flex-shrink: 0;
 	justify-content: center;
-	border: solid indigo 1px;
-	height: 20px;
+	// border: solid indigo 1px;
+	height: 17px;
 	align-items: center;
 	white-space:nowrap;
+	font-size: 19px;
+	color: #993500;
 }
 
 .gamePrice {
@@ -947,10 +1019,12 @@ select {
     flex-grow: 0;
     flex-shrink: 0;
 	display: flex;
-	border: solid indigo 1px;
-	height: 20px;
+	// border: solid indigo 1px;
+	height: 17px;
 	align-items: center;
 	white-space:nowrap;
+	color: #739900;
+	font-size: 17px;
 }
 
 
@@ -958,35 +1032,39 @@ select {
 	display: flex;
 	flex-direction: row;
 	// justify-content: space-between;
-	border: solid blue 1px;
+	// border: solid blue 1px;
 	height: 80px;
 	width: 670px;
 	align-items: center;
+	color: #993500;
 }
 
 .gamesDescBox {
 	display: flex;
 	flex-direction: column;
-	border: solid green 1px;
+	// border: solid green 1px;
 	height: 80px;
 	width: 470px;
 	align-items: center;
+
 }
 
 .platform {
  	display: flex;
-	border: solid indigo 1px;
+	// border: solid indigo 1px;
 	height: 20px;
 	width: 469px;
 	align-items: center;
+	font-size: 15px;
 }
 
 .gameDesc {
  	display: flex;
-	border: solid indigo 1px;
+	// border: solid indigo 1px;
 	height: 59px;
 	width: 469px;
 	align-items: center;
+	font-size: 13px;
 }
 
 // ====================== Location 8 ==================
@@ -1011,6 +1089,7 @@ select {
 	border-bottom: solid #FFAF00 3px;
 	color: #993500;
 	font-size: 20px;
+	background: rgba(221, 179, 136, 0.8);
 	p {
 		margin: 0px;
 	}
