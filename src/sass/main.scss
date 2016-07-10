@@ -1,6 +1,7 @@
 
-// red 	  #993500;
-// orange #FFAF00
+// red 	  #993500
+// lighter red #cc4700
+// orange #e69d00
 html { 
   background: url(/images/wood_BG_Vert.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
@@ -50,11 +51,11 @@ html {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	border: solid black 1px;
+	// border: solid black 1px;
 	margin: auto;
 	margin-top: 10px;
-	height: 2280px;
-	width: 960px;
+	height: 2480px;
+	width: 1060px;
 	background: rgba(255, 204, 153, 0.9);
 	flex: 1;
 }
@@ -68,6 +69,7 @@ html {
 	height: 115px;
 	width: 940px;
 	border-bottom: solid #FFAF00 3px;
+	text-shadow:  (1px 1px 5px black);
 }
 
 .location1Box {
@@ -80,15 +82,14 @@ html {
 	font-size: 60px;
 	color: #993500;
 
+
 }
 
 .location2Box {
 	display: flex;
-	flex-align: right;
 	border: solid #e69d00 1px;
-	// margin-left: 50px;
-	height: 90px;
-	width: 270px;
+	height: 76px;
+	width: 200px;
 	justify-content: center;
 	align-items: center;
 	background: rgba(221, 179, 136, 0.8);
@@ -113,17 +114,18 @@ html {
 
 // ==========HERO IMAGE==================
 .location3Box {
-	display: flex;
-	flex-direction: row;
+	// display: flex;
+	// flex-direction: row;
 	justify-content: center;
 	align-items: center;
-	border: solid red 1px;
+	// border: solid red 1px;
 	height: 400px;
 	width: 940px;
 	margin-top: 20px;
 	img {
 		width: 100%;
 		max-height: 100%;
+		@include box-shadow (5px 5px 20px black);
 	}
 }
 
@@ -136,7 +138,7 @@ html {
 	// border: solid red 1px;
 	height: 270px;
 	width: 940px;
-	margin-top: 20px;
+	margin-top: 40px;
 }
 
 // ==========Location 4===========
@@ -144,7 +146,7 @@ html {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
-	border: solid black 1px;
+	border: solid #e69d00 2px;
 	height: 240px;
 	width: 300px;
 	align-items: center;
@@ -165,7 +167,7 @@ html {
 .titleAndDateBox {
 	display: flex;
 	flex-direction: row;
-	justify-content: space-around;
+	justify-content: space-between;
 	// border: solid yellow 1px;
 	height: 45px;
 	width: 300px;
@@ -173,22 +175,23 @@ html {
 
 .titleBox {
 	display: flex;
-	border: solid green 1px;
+	// border: solid green 1px;
 	height: 40px;
 	width: 200px;
 	align-items: center;
 	color: #993500;
-
-
+	margin-left: 4px;
 }
 
 .dateBox {
 	display: flex;
-	border: solid green 1px;
+	// border: solid green 1px;
 	height: 40px;
 	width: 50px;
 	align-items: center;
 	white-space: nowrap;
+	color: #993500;
+	margin-right: 4px;
 }
 
 .paragraphBox {
@@ -199,6 +202,8 @@ html {
 	height: 130px;
 	width: 290px;
 	overflow: hidden;
+	color: #993500;
+
 	p {
 		margin-top: 2px;
 	}
@@ -208,9 +213,15 @@ html {
 	display: flex;
 	// border: solid yellow 1px;
 	height: 12px;
-	width: 290px;
+	width: 100px;
 	align-items: center;
-
+	justify-content: center;
+	color: #e69d00;
+	font-size: 18px;
+}
+.readMoreBox:hover{
+	border-bottom: solid #e69d00 1px;
+	color: #cc4700;
 }
 
 // =========location 5===============
@@ -218,7 +229,7 @@ html {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	border: solid black 1px;
+	border: solid #e69d00 2px;
 	height: 240px;
 	width: 300px;
 	align-items: center;
@@ -231,7 +242,8 @@ html {
 	height: 40px;
 	width: 290px;
 	align-items: center;
-	border-bottom: solid grey 2px;
+	border-bottom: solid #e69d00 2px;
+	color: #993500;
 }
 
 .specialsImgBox {
@@ -255,11 +267,14 @@ html {
     overflow:hidden;
     white-space:nowrap;
 	align-items: center;
+	color: #993500;
 	// border: solid yellow 1px;
 }
 .specialsNameBox td:first-child:after {
+color: #e69d00;
     content:" - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - "
 }
+
 
 
 .spDescriptionBox {
@@ -269,6 +284,7 @@ html {
 	width: 290px;
 	align-items: center;
 	margin-bottom: 5px;
+	color: #993500;
 }
 
 
@@ -277,7 +293,7 @@ html {
 .location6Box {
 	display: flex;
 	flex-direction: column;
-	border: solid black 1px;
+	border: solid #e69d00 2px;
 	height: 240px;
 	width: 300px;
 	justify-content: center;
@@ -292,7 +308,8 @@ html {
 	height: 40px;
 	width: 290px;
 	align-items: center;
-	border-bottom: solid grey 2px;
+	border-bottom: solid #e69d00 2px;
+	color: #993500;
 }
 
 .gMapsBox {
@@ -310,6 +327,7 @@ html {
 	width: 295px;
 	align-items: center;
 	justify-content: center;
+	color: #993500;
 }
 
 .phoneNumBox {
@@ -324,11 +342,11 @@ html {
 
 a {
 	text-decoration:none;
-	color: black;
+	color: #993500;
 }
 
 a:hover {
-	color: grey;
+	color: #cc4700;
 }
 
 .main {
@@ -338,7 +356,7 @@ a:hover {
 	width: 145px;
 	align-items: center;
 	justify-content: center;
-	color: black;
+	color: #993500;;
 }
 
 .res {
@@ -365,9 +383,10 @@ a:hover {
 	width: 100px;
 	align-items: center;
 	justify-content: center;
+	color: #993500;
 }
 .mapLink:hover{
-	color: grey;
+	color: #cc4700;
 }
 
 .directionsLink {
@@ -377,9 +396,10 @@ a:hover {
 	width: 100px;
 	align-items: center;
 	justify-content: center;
+	color: #993500;
 }
 .directionsLink:hover{
-	color: grey;
+	color: #cc4700;
 }
 
 // ======================== Main  Tabs box =======
@@ -388,8 +408,8 @@ a:hover {
 	flex-direction: row;
 	justify-content: space-between;
 	// align-items: center;
-	border: solid red 1px;
-	height: 1540px;
+	// border: solid red 1px;
+	height: 1840px;
 	width: 940px;
 	margin-top: 20px;
 }
@@ -399,7 +419,7 @@ a:hover {
 .location7Box {
 	display: flex;
 	flex-direction: column;
-	border: solid orange 1px;
+	// border: solid orange 1px;
 	height: 800px;
 	width: 690px;
 	align-items: center;
@@ -449,6 +469,7 @@ a:hover {
 			align-items: center;
 			top: -15px;
 			font-size: 22px;
+			color:  #cc4700;
 			p {
 				margin: 0;
 			}
@@ -480,7 +501,7 @@ a:hover {
 .storyBox {
 	display: flex;
 	flex-direction: column;	
-	border: solid yellow 1px;
+	// border: solid yellow 1px;
 	height: 750px;
 	width: 680px;
 	align-items: center;
@@ -489,7 +510,7 @@ a:hover {
 .contentsBox {
 	display: flex;
 	flex-direction: column;
-	border: solid yellow 1px;
+	// border: solid yellow 1px;
 	height: 750px;
 	width: 680px;
 	align-items: center;
@@ -560,16 +581,6 @@ a:hover {
 	white-space:nowrap;
 }
 
-
-// 	border: solid blue 1px;
-// 	height: 40px;
-// 	max-width: 670px;
-// 	align-items: center;
-// }
-
-.appNameBox td:first-child:after {
-    content:" - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - "
-}
 
 .appDescn-InfoButtonsBox {
 	display: flex;
@@ -976,35 +987,38 @@ select {
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: center;
-	border: solid orange 1px;
+	// border: solid orange 1px;
 	height: 1460px;
 	width: 220px;
-	// flex: 1;
+	margin-top: 9px;
 }
 
 .foodPicsTextBox {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	border: solid yellow 1px;
+	// border: solid yellow 1px;
 	height: 50px;
 	width: 210px;
-	border-bottom: solid #FFAF00 2px;
+	border-bottom: solid #FFAF00 3px;
 	color: #993500;
-
+	font-size: 20px;
+	p {
+		margin: 0px;
+	}
 }
 
 .photoBox {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	border: solid yellow 1px;
+	// border: solid #FFAF00 3px;
 	height: 216px;
 	width: 216px;
 	img {
 		width: 100%;
 		height: 100%;
-		@include box-shadow (-50px -100px 100px green);
+		@include box-shadow (5px 5px 20px black);
 	}
 }
 
@@ -1013,9 +1027,10 @@ select {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	border: solid red 1px;
-	border-top: solid grey 2px;
+	// border: solid red 1px;
+	border-top: solid #e69d00 3px;
 	height: 80px;
 	width: 940px;
 	margin-top: 20px;
+	color: #993500;
 }
