@@ -1,19 +1,19 @@
-
 // red 	  #993500
 // lighter red #cc4700
 // orange #e69d00
+
 // green #739900
 
 // *{font-family: 'Patrick Hand', cursive;}
 *{font-family: 'Alice', serif;}
 html { 
   background: url(/images/wood_BG_Vert.jpg) no-repeat center center fixed; 
+
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
-
 
 @mixin border-radius($radius) {
     -webkit-border-radius: $radius;
@@ -44,8 +44,6 @@ html {
     transform: $transformation;
 }
 
-
-
 @font-face {
 	font-family: "The Noun Project";
 	src: url("../../The-Noun-Project.woff");
@@ -56,12 +54,14 @@ html {
 	flex-direction: column;
 	align-items: center;
 	// border: solid black 1px;
-	margin: auto;
-	margin-top: 10px;
+	margin: 20px auto;
 	height: 2480px;
 	width: 1060px;
 	background: rgba(255, 204, 153, 0.9);
 	flex: 1;
+	border: 1px solid rgba(255, 255, 255, 0.5);
+	@include box-shadow(0 0 35px 5px black);
+	@include border-radius(4px);
 }
 // ==========BANNER==================
 .bannerBox {
@@ -178,7 +178,7 @@ html {
 .titleAndDateBox {
 	display: flex;
 	flex-direction: row;
-	justify-content: space-between;
+	justify-content: space-around;
 	// border: solid yellow 1px;
 	height: 45px;
 	width: 300px;
@@ -334,11 +334,14 @@ color: #e69d00;
 .addressBox {
 	display: flex;
 	// border: solid yellow 1px;
+	color: #993500;
 	height: 20px;
 	width: 295px;
 	align-items: center;
 	justify-content: center;
-	color: #993500;
+	p {
+		text-align: center;
+	}
 }
 
 .phoneNumBox {
@@ -420,7 +423,7 @@ a:hover {
 	justify-content: space-between;
 	// align-items: center;
 	// border: solid red 1px;
-	height: 1840px;
+	height: 2000px;
 	width: 940px;
 	margin-top: 20px;
 }
@@ -431,16 +434,24 @@ a:hover {
 	display: flex;
 	flex-direction: column;
 	// border: solid orange 1px;
-	height: 800px;
-	width: 690px;
+	height: 1550px;
+	width: 710px;
 	align-items: center;
 	// flex: 1;
 }
 
+// .tabsBox {
+//  	display: flex;
+// 	flex-direction: row;
+// 	// border: solid yellow 1px;
+// 	height: 50px;
+// 	width: 680px;
+// 	border-bottom: solid grey 2px;
+// }
 
 .storyTabBox {
  	display: flex;
-	// border: solid green 1px;
+	border: solid green 1px;
 	// border-bottom: 1px solid #FFAF00;
 	height: 50px;
 	width: 100px;
@@ -471,10 +482,10 @@ a:hover {
 		// border: 1px solid black;
 		color: #993500;
 		@include border-radius(5px 5px 0 0);
-		//@include transition(all 0.4s ease);
+		@include transition(all 0.4s ease);
 		&:hover {
 			border-bottom: solid #993500 2px;
-			padding: 7px 5px 10px;
+			padding: 7px 10px 10px;
 			display: flex;
 			justify-content: center;
 			align-items: center;
@@ -507,42 +518,44 @@ a:hover {
 	border-right: solid grey 2px;
 }
 
-
 // ===============Contents Box===============
 .storyBox {
 	display: flex;
-	flex-direction: column;	
-	// border: solid yellow 1px;
-	height: 750px;
+	flex-direction: column;
+	border: solid yellow 1px;
+	height: 1000px;
 	width: 680px;
 	align-items: center;
+	flex: 1;
 }
 
 .contentsBox {
 	display: flex;
 	flex-direction: column;
-	// border: solid yellow 1px;
-	height: 750px;
-	width: 680px;
+	// border: solid yellow 3px;
+	height: 1950px;
+	width: 695px;
 	align-items: center;
-	background: rgba(221, 179, 136, 0.8);
+	// background: rgba(221, 179, 136, 0.8);
 	flex: 1px;
 }
 
 .menuBox {
 	display: flex;
 	flex-direction: column;
-	justify-content: space-around;
+	// justify-content: space-around;
 	// border: solid green 1px;
-	height: 745px;
-	width: 675px;
+	height: 1250px;
+	width: 695px;
+	// overflow: scroll;
+	flex: 1;
 	// align-items: center;
 }
 
 .AppsTitleBox {
 	display: flex;
 	// border: solid blue 1px;
-	height: 60px;
+	height: 40px;
 	width: 670px;
 	align-items: center;
 	border-bottom: solid #e69d00 3px;
@@ -555,7 +568,7 @@ a:hover {
 	display: flex;
 	flex-direction: row;
 	// border: solid blue 1px;
-	height: 40px;
+	height: 30px;
 	width: 670px;
 	align-items: center;
 }
@@ -567,10 +580,11 @@ a:hover {
     flex-shrink: 0;
 	justify-content: center;
 	// border: solid indigo 1px;
-	height: 20px;
+	height: 17px;
 	align-items: center;
 	white-space:nowrap;
 	color: #993500;
+	font-size:17px;
 }
 
 .dashes{
@@ -592,7 +606,7 @@ a:hover {
     flex-shrink: 0;
 	display: flex;
 	// border: solid indigo 1px;
-	height: 20px;
+	height: 17px;
 	align-items: center;
 	white-space:nowrap;
 	color: #739900;
@@ -604,7 +618,7 @@ a:hover {
 	flex-direction: row;
 	justify-content: space-between;
 	// border: solid blue 1px;
-	height: 80px;
+	height: 70px;
 	width: 670px;
 	align-items: center;
 }
@@ -612,10 +626,11 @@ a:hover {
 .appDescBox {
 	display: flex;
 	// border: solid indigo 1px;
-	height: 80px;
+	height: 70px;
 	width: 560px;
 	align-items: center;
-		color: #993500;
+	color: #993500;
+	font-size: 13px;
 }
 
 .infoIconsBox {
@@ -636,7 +651,7 @@ a:hover {
 .grubTitleBox {
 	display: flex;
 	// border: solid blue 1px;
-	height: 60px;
+	height: 40px;
 	width: 670px;
 	align-items: center;
 	border-bottom: solid #e69d00 3px;
@@ -646,11 +661,13 @@ a:hover {
 
 .grubNameBox {
 	display: flex;
+	white-space:nowrap;
 	flex-direction: row;
 	// border: solid blue 1px;
-	height: 40px;
+	height: 30px;
 	width: 670px;
 	align-items: center;
+	font-size: 17px;
 }
 
 .grubName {
@@ -660,7 +677,7 @@ a:hover {
     flex-shrink: 0;
 	justify-content: center;
 	// border: solid indigo 1px;
-	height: 20px;
+	height: 17px;
 	align-items: center;
 	white-space:nowrap;
 	color: #993500;
@@ -672,33 +689,20 @@ a:hover {
     flex-shrink: 0;
 	display: flex;
 	// border: solid indigo 1px;
-	height: 20px;
+	height: 17px;
 	align-items: center;
 	white-space:nowrap;
 	color: #739900;
 
 }
 
-// 	font-size: 40px;
-// }
-
-.grubNameBox {
-	// display: flex;
-	// justify-content: space-between;
-	overflow:hidden;
-    white-space:nowrap;
-	// border: solid blue 1px;
-	height: 40px;
-	max-width: 670px;
-	align-items: center;
-}
 
 .grubDescn-InfoButtonsBox {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 	// border: solid blue 1px;
-	height: 80px;
+	height: 70px;
 	width: 670px;
 	align-items: center;
 }
@@ -706,10 +710,11 @@ a:hover {
 .grubDescBox {
 	display: flex;
 	// border: solid indigo 1px;
-	height: 80px;
+	height: 70px;
 	width: 470px;
 	align-items: center;
 	color: #993500;
+	font-size: 13px;
 }
 
 // ==
@@ -812,6 +817,7 @@ a:hover {
 	border: solid green 1px;
 	height: 745px;
 	width: 675px;
+	background: rgba(221, 179, 136, 0.8);
 }
 
 .nameTitle {
@@ -942,16 +948,18 @@ select {
 .gamesBox {
 	display: flex;
 	flex-direction: column;
-	justify-content: space-around;
+	// justify-content: space-around;
 	border: solid green 1px;
 	height: 745px;
 	width: 675px;
+	background: rgba(221, 179, 136, 0.8);
+	// flex: 1;
 }
 
 .gamesTitleBox {
 	display: flex;
 	border: solid blue 1px;
-	height: 60px;
+	height: 40px;
 	width: 670px;
 	align-items: center;
 	border-bottom: solid grey 2px;
@@ -961,7 +969,7 @@ select {
 .gamesNameBox {
 	display: flex;
 	border: solid blue 1px;
-	height: 40px;
+	height: 30px;
 	max-width: 670px;
 	align-items: center;
 }
@@ -973,7 +981,7 @@ select {
     flex-shrink: 0;
 	justify-content: center;
 	border: solid indigo 1px;
-	height: 20px;
+	height: 17px;
 	align-items: center;
 	white-space:nowrap;
 }
@@ -984,7 +992,7 @@ select {
     flex-shrink: 0;
 	display: flex;
 	border: solid indigo 1px;
-	height: 20px;
+	height: 17px;
 	align-items: center;
 	white-space:nowrap;
 }
@@ -1031,7 +1039,7 @@ select {
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: center;
-	// border: solid orange 1px;
+	border: solid orange 1px;
 	height: 1460px;
 	width: 220px;
 	margin-top: 9px;
@@ -1041,7 +1049,7 @@ select {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	// border: solid yellow 1px;
+	border: solid yellow 1px;
 	height: 50px;
 	width: 210px;
 	border-bottom: solid #FFAF00 3px;
@@ -1056,13 +1064,13 @@ select {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	// border: solid #FFAF00 3px;
+	border: solid #FFAF00 3px;
 	height: 216px;
 	width: 216px;
 	img {
 		width: 100%;
 		height: 100%;
-		@include box-shadow (5px 5px 20px black);
+		@include box-shadow(5px 5px 20px black);
 	}
 }
 
