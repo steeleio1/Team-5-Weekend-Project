@@ -38,8 +38,6 @@ html {
     transform: $transformation;
 }
 
-
-
 @font-face {
 	font-family: "The Noun Project";
 	src: url("../../The-Noun-Project.woff");
@@ -50,12 +48,14 @@ html {
 	flex-direction: column;
 	align-items: center;
 	// border: solid black 1px;
-	margin: auto;
-	margin-top: 10px;
+	margin: 20px auto;
 	height: 2480px;
 	width: 1060px;
 	background: rgba(255, 204, 153, 0.9);
 	flex: 1;
+	border: 1px solid rgba(255, 255, 255, 0.5);
+	@include box-shadow(0 0 35px 5px black);
+	@include border-radius(4px);
 }
 // ==========BANNER==================
 .bannerBox {
