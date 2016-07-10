@@ -165,7 +165,7 @@ html {
 .titleAndDateBox {
 	display: flex;
 	flex-direction: row;
-	justify-content: space-between;
+	justify-content: space-around;
 	// border: solid yellow 1px;
 	height: 45px;
 	width: 300px;
@@ -173,21 +173,22 @@ html {
 
 .titleBox {
 	display: flex;
-	// border: solid green 1px;
+	border: solid green 1px;
 	height: 40px;
 	width: 200px;
 	align-items: center;
-	margin-left: 5px;
-		color: #993500;
+	color: #993500;
+
 
 }
 
 .dateBox {
 	display: flex;
-	// border: solid green 1px;
+	border: solid green 1px;
 	height: 40px;
 	width: 50px;
 	align-items: center;
+	white-space: nowrap;
 }
 
 .paragraphBox {
@@ -428,19 +429,16 @@ a:hover {
 	padding: 10px 15px 0;
 	align-items: bottom;
 	.Box {
-	    // position: relative;
 	    display: flex;
 	    top: 1px;
-	    // height: 40px;
-	    // width: 50px;
-		background: white;
+		background: rgba(221, 179, 136, 0.8);
 		cursor: pointer;
 		margin: 0 15px;
 		padding: 0 10px;
 		font-size: 20px;
 		align-items: center;
 		// border: 1px solid black;
-		// border-bottom: 0;
+		color: #993500;
 		@include border-radius(5px 5px 0 0);
 		//@include transition(all 0.4s ease);
 		&:hover {
@@ -655,10 +653,6 @@ a:hover {
 	align-items: center;
 }
 
-.grubNameBox td:first-child:after {
-    content:"  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - "
-}
-
 .grubDescn-InfoButtonsBox {
 	display: flex;
 	flex-direction: row;
@@ -720,9 +714,6 @@ a:hover {
 	white-space:nowrap;
 }
 
-.beerNameBox td:first-child:after {
-    content:" - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - "
-}
 
 .beerDescn-InfoButtonsBox {
 	display: flex;
@@ -1013,6 +1004,7 @@ select {
 	img {
 		width: 100%;
 		height: 100%;
+		@include box-shadow (-50px -100px 100px green);
 	}
 }
 
