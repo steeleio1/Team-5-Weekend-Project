@@ -2,27 +2,25 @@ import $ from 'jquery';
 import {mainContent} from '../main';
 import {google_key} from '../cred';
 
-var todaysSpecial;
-
 function insert(locale, data){
-    data = data || {};
+    data = data || [0, 0, 0, 0];
     let map = $('.gMapsBox iframe'),
-        apps = data.appetizers,
-        beer = data.Beer,
-        grub = data.entrees,
-        news = data.post_id,
-        special = data.menu_item_id,
+        apps = data[1].appetizers,
+        beer = data[3].Beer,
+        grub = data[3].entrees,
+        news = data[2],
+        todaysSpecial = data[0].menu_item_id,
         content;
+        console.log("data", data, "apps: ", apps, "beer: ", beer, "grub: ", grub, "news", news, "special", todaysSpecial);
     if (map.attr('src') === undefined)
         map.attr("src", `https://www.google.com/maps/embed/v1/place?key=${google_key}&q=The+Iron+Yard,Atlanta+GA`);
     console.log(data);
-    if (news) {
-        $('.location4Box .titleBox p').text(data.title);
-        $('.location4Box .dateBox p').text(data.date_published);
-        $('.location4Box .paragraphBox p').text(data.post);
-    } else if (apps) {
-        let n, name, d, description;
+    $('.location4Box .titleBox p').text(news.title);
+    $('.location4Box .dateBox p').text(news.date_published);
+    $('.location4Box .paragraphBox p').text(news.post);
 
+    if (locale) {
+        let n, name, d, description;
         content = locale['menu'].find('.appsContent');
         name = content.find('.appNameBox');
         description = content.find('.appDescn-InfoButtonsBox');
@@ -35,11 +33,6 @@ function insert(locale, data){
             d.find('.appDescBox p').text(appetizer.description);
             content.append(`${n[0].outerHTML}\n${d[0].outerHTML}\n`);
         });
-        //console.log(content.html());
-    } else if (special) {
-        todaysSpecial = special;
-    } else if (locale) {
-        let n, name, d, description;
 
         content = locale['menu'].find('.grubContent');
         name = content.find('.grubNameBox');
