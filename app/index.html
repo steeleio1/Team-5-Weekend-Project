@@ -3,12 +3,13 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Arcadia Pub</title>
+        <title>Arcadia Pub - Drink beer, play video games</title>
         <link rel="icon" href="images/beer.png">
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
-    <link href='https://fonts.googleapis.com/css?family=Playfair+Display+SC|Handlee|Alice|Patrick+Hand|Limelight|Press+Start+2P' rel='stylesheet' type='text/css'>
+        <!-- <link rel="stylesheet" href="jquery-ui/jquery-ui.min.css"> -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+        <link href='https://fonts.googleapis.com/css?family=Playfair+Display+SC|Handlee|Alice|Patrick+Hand|Limelight|Press+Start+2P' rel='stylesheet' type='text/css'>
     </head>
     <body>
 
@@ -21,7 +22,11 @@
             <p>Arcadia Pub</p>
         </div>
         <div class="location2Box">
-            <p><a href="#" class="twitter"></a><a href="#" class="facebook"></a><a href="#" class="instagram"></a></p>
+            <p>
+                <a href="#" class="twitter" title="See our tweets!"></a>
+                <a href="#" class="facebook" title="Like us on Facebook!"></a>
+                <a href="#" class="instagram" title="Browse our InstaGram!"></a>
+            </p>
         </div>
     </div>
 
@@ -59,9 +64,7 @@
         <div class="specialsBox">
           <p>Today's Special</p>
         </div>
-        <div class="specialsImgBox">
-          <img src="http://www.fillmurray.com/200/100" style="width: 100%;max-height: 100%">
-        </div>
+        <div class="specialsImgBox"></div>
         <table class="specialsNameBox">
              <tr>
                 <td>Burger fries coke</td>
@@ -95,10 +98,10 @@
         </div>
         <div class="mapsInfoBox">
             <div class="mapLink">
-                <p>MAP</p>
+                <a href="https://www.google.com/maps/place/The+Iron+Yard+-+Atlanta/" target="_blank">MAP</a>
             </div>
             <div class="directionsLink">
-               <p>Directions</p>
+               <a href="https://www.google.com/maps/dir//The+Iron+Yard+-+Atlanta" target="_blank">Directions</a>
             </div>
         </div>
     </div>
@@ -136,14 +139,19 @@
               <div class="AppsTitleBox">
                   <p>Apps</p>
               </div>
-              <div class="appsContent">
-                  <div class="appNameBox">
 
-                      <div class="appName"> Spicy Buffalo Wings</div>
-                      <div class="dashes">
-                        <p> - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  </p>
-                      </div>
-                      <div class="appPrice">$7</div>
+              <div class="appNameBox">
+
+                  <div class="appName"> Spicy Buffalo Wings</div>
+                  <div class="dashes">
+                    <p> - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  </p>
+                  </div>
+                  <div class="appPrice">$7</div>
+
+              </div>
+              <div class="appDescn-InfoButtonsBox">
+                  <div class="appDescBox">
+                      <p>Wings drizzled in our crazy hot nuclear sauce</p>
 
                   </div>
 
@@ -176,14 +184,18 @@
               <div class="grubTitleBox">
                   <p>Grub</p>
               </div>
-              <div class="grubContent">
-                  <div class="grubNameBox">
-                        <div class="grubName"> Burger</div>
-                        <div class="dashes">
-                           <p> - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  </p>
-                        </div>
-                        <div class="grubPrice">$15</div>
 
+              <div class="grubNameBox">
+                    <div class="grubName"> Burger</div>
+                    <div class="dashes">
+                       <p> - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  </p>
+                    </div>
+                    <div class="grubPrice">$15</div>
+
+              </div>
+              <div class="grubDescn-InfoButtonsBox">
+                  <div class="grubDescBox">
+                      <p>2 all beef patties, special sauce, sesame seed bun</p>
                   </div>
 
                   <div class="grubDescn-InfoButtonsBox">
@@ -211,6 +223,7 @@
                           <p> - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  </p>
                       </div>
                       <div class="beerPrice">$7</div>
+
                   </div>
 
                   <div class="beerDescn-InfoButtonsBox">
@@ -237,6 +250,7 @@
 
 
           
+
           <!-- contents -->
         </div>
 
@@ -245,7 +259,7 @@
   </div>
       <div class="location8Box">
         <div class="foodPicsTextBox">
-          <p>Food and Drink Photos...</p>
+          <p>Barrooms and Drink Photos...</p>
         </div>
       </div>
 
@@ -270,5 +284,6 @@
 
     <!-- ==============bottom======== -->
     <script src="js/bundle.js"></script>
+    <!-- <script type="text/javascript" src="jquery-ui/jquery-ui.min.js"></script> -->
   </body>
 </html>

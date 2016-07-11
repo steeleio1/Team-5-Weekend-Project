@@ -15,6 +15,10 @@ function insert(locale, data){
 
     if (locale) {
         let n, name, d, description;
+        const   ALLERGIES = 'This item may contain shellfish or another item that some may be allergic to. Please ask your waiter or waitress for assistance.',
+                FAVORITE = 'YUM! We have been doing this a long time and this item has become one of our favorites.',
+                SPICY = 'This item is spicy! Please handle with care and drink lots of water.',
+                VEGAN = 'This item contains no meat and has been prepared without the use of animal products.';
 
         content = locale['menu'].find('.appsContent');
         name = content.find('.appNameBox');
@@ -26,6 +30,10 @@ function insert(locale, data){
             n.find('.appName').text(appetizer.item).end()
              .find('.appPrice').text('$' + appetizer.price);
             d.find('.appDescBox p').text(appetizer.description);
+            if (appetizer.allergies) d.find('.allergies .info').text(ALLERGIES);
+            if (appetizer.favorite) d.find('.favorite .info').text(FAVORITE);
+            if (appetizer.spicy) d.find('.spicy .info').text(SPICY);
+            if (appetizer.vegan) d.find('.vegan .info').text(VEGAN);
             content.append(`${n[0].outerHTML}\n${d[0].outerHTML}\n`);
         });
 
@@ -40,6 +48,10 @@ function insert(locale, data){
              .find('.grubPrice').text('$' + entree.price);
             d.find('.grubDescBox p').text(entree.description);
             content.append(`${n[0].outerHTML}\n${d[0].outerHTML}\n`);
+            if (entree.allergies) d.find('.allergies .info').text(ALLERGIES);
+            if (entree.favorite) d.find('.favorite .info').text(FAVORITE);
+            if (entree.spicy) d.find('.spicy .info').text(SPICY);
+            if (entree.vegan) d.find('.vegan .info').text(VEGAN);
             if (entree.id === todaysSpecial) {
                 $('.specialsNameBox td:first-child').text(entree.item);
                 $('.specialsNameBox td:last-child').text('$' + entree.price);
@@ -56,7 +68,9 @@ function insert(locale, data){
             d = description.clone();
             n.find('.beerName').text(draught.item).end()
              .find('.beerPrice').text('$' + draught.price);
-            d.find('.beerStyle p').text(draught.style).end()
+            d.find('.beerStyle p').html(`
+                ${draught.style} / ${draught.draught ? 'Draft beer, ' : 'Bottled beer, '}
+                <span class="abv">alcohol by volume:</span> ${draught.abv}%`).end()
              .find('.beerDescBox p').text(draught.description);
             content.append(`${n[0].outerHTML}\n${d[0].outerHTML}\n`);
         });
@@ -71,7 +85,7 @@ function insert(locale, data){
             d = description.clone();
             n.find('.gameName').text(game.item).end()
              .find('.gamePrice').text('$' + game.price);
-            d.find('.platform p').html(`Played on: <span>${game.platform}</span> | Rated: <span>${game.rating}</span>`).end()
+            d.find('.platform p').html(`played on: <span>${game.platform} |</span> rated: <span>${game.rating}</span>`).end()
              .find('.gameDesc p').text(game.description);
             content.append(`${n[0].outerHTML}\n${d[0].outerHTML}\n`);
         });
