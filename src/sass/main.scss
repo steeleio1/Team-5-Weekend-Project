@@ -690,6 +690,22 @@ a:hover {
 	}
 }
 
+#exPopup {
+ border: solid #993500 1px;
+position: absolute;
+ height: 60px;
+ width: 120px;
+ font-size: 10px;
+}
+
+#starPopup {
+ border: solid #993500 1px;
+position: absolute;
+ height: 60px;
+ width: 120px;
+ font-size: 10px;
+}
+
 
 .grubTitleBox {
 	display: flex;
@@ -854,7 +870,7 @@ a:hover {
 	width: 469px;
 	align-items: center;
 	color: #993500;
-    font-size: 13px;
+	font-size: 13px;
 }
 
 // =============== Reservation Form======
