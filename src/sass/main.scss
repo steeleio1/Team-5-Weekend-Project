@@ -6,8 +6,8 @@
 // *{font-family: 'Patrick Hand', cursive;}
 *{font-family: 'Alice', serif;}
 
-html { 
-  background: url(/images/wood_BG_Vert.jpg) no-repeat center center fixed; 
+html {
+  background: url(/images/wood_BG_Vert.jpg) no-repeat center center fixed;
 
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -73,7 +73,7 @@ html {
 	height: 115px;
 	width: 940px;
 	border-bottom: solid #FFAF00 3px;
-	text-shadow:  (1px 1px 5px black);
+	@include box-shadow(0 5px 10px -5px #993500);
 }
 
 .location1Box {
@@ -85,6 +85,7 @@ html {
 	align-items: center;
 	font-size: 60px;
 	color: #993500;
+	text-shadow: 0 2px 6px rgba(0, 0, 0, .75);
 	p {
 		font-family: 'Limelight', cursive;
 	}
@@ -100,26 +101,24 @@ html {
 	background: rgba(221, 179, 136, 0.8);
 	color: #993500;
 	a {
-		color: black;
+		color: #993500;
 		font: 24px The Noun Project;
 		text-decoration: none;
 		outline: 0;
 		margin: 0 15px;
+		text-shadow: 0 1px 1px white;
+		&:hover {
+			text-shadow: 0 0px 10px #e69d00;
+		}
 	}
 	.twitter:before {
 		content: "\24e3";
-		color: #993500;
-
 	}
 	.facebook:before {
 		content: "\24d5";
-		color: #993500;
-
 	}
 	.instagram:before {
 		content: "\24d8";
-		color: #993500;
-
 	}
 }
 
@@ -214,14 +213,14 @@ html {
 	width: 290px;
 	overflow: hidden;
 	color: #993500;
-
 	p {
-		margin-top: 2px;
+		margin-top: 0;
 	}
 }
 
 .readMoreBox {
 	display: flex;
+	cursor: pointer;
 	// border: solid yellow 1px;
 	height: 12px;
 	width: 100px;
@@ -280,6 +279,9 @@ html {
 	align-items: center;
 	color: #993500;
 	// border: solid yellow 1px;
+	&:last-child {
+		color: #739900;
+	}
 }
 .specialsNameBox td:first-child:after {
 color: #e69d00;
@@ -312,6 +314,10 @@ color: #e69d00;
 	align-items: center;
 	justify-content: space-between;
 	background: rgba(221, 179, 136, 0.8);
+}
+
+.location2Box, .location4Box, .location5Box, .location6Box {
+	@include box-shadow(0 0 8px 0px #993500);
 }
 
 .locationBox {
@@ -358,6 +364,7 @@ color: #e69d00;
 a {
 	text-decoration:none;
 	color: #993500;
+	@include transition(all 0.15s ease);
 }
 
 a:hover {
@@ -441,27 +448,6 @@ a:hover {
 	// flex: 1;
 }
 
-// .tabsBox {
-//  	display: flex;
-// 	flex-direction: row;
-// 	// border: solid yellow 1px;
-// 	height: 50px;
-// 	width: 680px;
-// 	border-bottom: solid grey 2px;
-// }
-
-// .storyTabBox {
-//  	display: flex;
-// 	border: solid green 1px;
-// 	// border-bottom: 1px solid #FFAF00;
-// 	height: 50px;
-// 	width: 100px;
-// 	align-items: center;
-// 	border-top: solid grey 2px;
-// 	border-left: solid grey 2px;
-// 	border-right: solid grey 2px;
-// }
-
 .tabsBox {
 	display: flex;
 	// border: solid green 1px;
@@ -483,6 +469,7 @@ a:hover {
 		// border: 1px solid black;
 		color: #993500;
 		@include border-radius(5px 5px 0 0);
+		@include box-shadow(0 0 6px rgba(0, 0, 0, .4));
 		@include transition(all 0.4s ease);
 		&:hover {
 			border-bottom: solid #993500 2px;
@@ -529,7 +516,7 @@ a:hover {
 	align-items: center;
 	background: rgba(221, 179, 136, 0.8);
 	font-size: 15px;
-	color: #993500;	
+	color: #993500;
 }
 
 .contentsBox {
@@ -539,8 +526,14 @@ a:hover {
 	height: 1950px;
 	width: 695px;
 	align-items: center;
-margin-top: 5px;
+	margin-top: 5px;
 	flex: 1px;
+	& > div {
+		padding: 0 15px;
+		box-sizing: border-box;
+		@include border-radius(4px);
+		@include box-shadow(0 0 12px rgba(0, 0, 0, .4));
+	}
 }
 
 .menuBox {
@@ -644,7 +637,57 @@ margin-top: 5px;
 	align-items: center;
 	border-left: solid #e69d00 2px;
 	.fa {
+		position: relative;
 		color: #993500;
+		cursor: help;
+		.popup {
+			position: absolute;
+			display: none;
+			top: 25px;
+			right: -10px;
+			width: 200px;
+			font-size: 13px;
+			background: rgba(255, 204, 153, 0.85);
+			background: #fc9;
+			border: 1px solid #e69d00;
+			padding: 10px;
+			z-index: 1;
+			@include box-shadow(0 2px 5px #993500);
+			&:before {
+				content: '';
+				position: absolute;
+				right: 9px;
+				top: -9px;
+				width: 0;
+				height: 0;
+				border-style: solid;
+				border-width: 0 7px 9px 7px;
+				border-color: transparent transparent #e69d00 transparent;
+			}
+			&:after {
+				content: '';
+				position: absolute;
+				right: 10px;
+				top: -7px;
+				width: 0;
+				height: 0;
+				border-style: solid;
+				border-width: 0 6px 7px 6px;
+				border-color: transparent transparent #ffcc99 transparent;
+			}
+			.header {
+				display: block;
+				font-weight: bold;
+				font-size: 17px;
+				border-bottom: 1px solid;
+				padding-bottom: 4px;
+				margin-bottom: 8px;
+				@include box-shadow(0 5px 6px -5px);
+			}
+		}
+		&:hover .popup {
+			display: block;
+		}
 	}
 }
 
@@ -750,6 +793,8 @@ margin-top: 5px;
 	align-items: center;
 	white-space:nowrap;
 	color: #993500;
+	font-weight: bold;
+    font-size: 18px;
 }
 
 .beerPrice {
@@ -797,7 +842,9 @@ margin-top: 5px;
 	white-space:nowrap;
 	border-bottom: solid #e69d00 1px;
 	color: #993500;
-
+	.abv {
+		font-size: 12px;
+	}
 }
 
 
@@ -835,7 +882,7 @@ margin-top: 5px;
 	display: flex;
 	border: solid #e69d00 2px;
 	height: 50px;
-	width: 650px;
+	width: 600px;
 	align-items: center;
 	color: #993500;
 	background: rgba(255, 204, 153, 0.9);
@@ -892,11 +939,23 @@ margin-top: 5px;
 	color: #993500;
 }
 
+[type=text], textarea {
+	padding: 0 12px;
+	outline-color: #993500;
+	@include transition(all .35s ease);
+	&:hover {
+		background-color: rgba(255, 204, 153, 0.55) !important;
+	}
+	&:focus {
+		background-color: white !important;
+	}
+}
+
 textarea {
 	display: flex;
 	border: solid #e69d00 2px;
 	height: 70px;
-	width: 270px;
+	width: 600px;
 	color: #993500;
 	background: rgba(255, 204, 153, 0.9);
 }
@@ -981,7 +1040,7 @@ option {
 	display: flex;
 	// border: solid blue 1px;
 	height: 40px;
-	width: 670px;
+	width: 640px;
 	align-items: center;
 	border-bottom: solid #e69d00 3px;
 	font-size: 40px;
@@ -1056,6 +1115,11 @@ option {
 	width: 469px;
 	align-items: center;
 	font-size: 15px;
+	font-style: italic;
+	span {
+		font-weight: bold;
+    	font-style: normal;
+	}
 }
 
 .gameDesc {
@@ -1083,6 +1147,7 @@ option {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	text-align: center;
 	// border: solid yellow 1px;
 	height: 50px;
 	width: 210px;
@@ -1090,6 +1155,7 @@ option {
 	color: #993500;
 	font-size: 20px;
 	background: rgba(221, 179, 136, 0.8);
+	@include box-shadow(0 0 10px rgba(0, 0, 0, .4));
 	p {
 		margin: 0px;
 	}
@@ -1120,4 +1186,5 @@ option {
 	width: 940px;
 	margin-top: 20px;
 	color: #993500;
+	@include box-shadow(0 -5px 10px -5px #993500);
 }

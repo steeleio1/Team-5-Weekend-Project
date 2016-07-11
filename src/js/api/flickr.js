@@ -13,7 +13,7 @@ function request(search_term) {
             sort: 'relevance',
             per_page: 4
         }
-    })
+    });
 }
 
 export default request;

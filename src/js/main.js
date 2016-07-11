@@ -1,4 +1,5 @@
 import $ from 'jquery';
+import jQuery from 'jquery';
 import get from './get-content';
 import flickr from './api/flickr';
 import pullData from './api/pull';
@@ -13,6 +14,13 @@ var mainContent = [];
 
 function insert(data){
     insertData(mainContent, data);
+}
+
+function numbersOnly(){
+    let input = this;
+    setTimeout(function(){
+        input.value = input.value.replace(/[^\d]/, '');
+    }, 1);
 }
 
 function populate(flickrPhotos){
@@ -53,10 +61,15 @@ flickr('sea scallops dish').then(function(data){
         <img src="https://farm${photo.farm}.staticflickr.com/${photo.server}/${photo.id}_${photo.secret}.jpg">`);
 });
 
+// $( "#datepicker" ).datepicker();
+
 $(document)
     .delegate('.storyTab', 'mouseenter', function(){ switchTo(mainContent['story']); })
     .delegate('.menuTab', 'mouseenter', function(){ switchTo(mainContent['menu']); })
     .delegate('.resTab', 'mouseenter', function(){ switchTo(mainContent['reservations']); })
-    .delegate('.gamesTab', 'mouseenter', function(){ switchTo(mainContent['games']); });
+    .delegate('.gamesTab', 'mouseenter', function(){ switchTo(mainContent['games']); })
+    .delegate('#guestInput', 'keydown',  numbersOnly);
 
 insertData();
+
+// import jqueryui from 'jquery-ui';
