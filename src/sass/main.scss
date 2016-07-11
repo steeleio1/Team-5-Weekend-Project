@@ -511,12 +511,16 @@ a:hover {
 	display: flex;
 	flex-direction: column;
 	// border: solid yellow 1px;
-	height: 500px;
+	height: 550px;
 	width: 680px;
 	align-items: center;
 	background: rgba(221, 179, 136, 0.8);
 	font-size: 15px;
 	color: #993500;
+	img {
+		@include border-radius(20px);
+		@include box-shadow(0 0 7px 1px black);
+	}
 }
 
 .contentsBox {
