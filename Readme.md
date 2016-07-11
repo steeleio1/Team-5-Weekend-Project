@@ -8,4 +8,4 @@ Useful skills to cover:
 * Flex box and CSS
 * Making API calls and storing data with jQuery
 
-[See the live site](tiy-ikennaugwuh-restaurant.surge.sh).
+[See the live site](http://tiy-ikennaugwuh-restaurant.surge.sh).
