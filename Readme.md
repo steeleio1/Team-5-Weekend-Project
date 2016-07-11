@@ -7,3 +7,5 @@ Useful skills to cover:
 * Forking, cloning, pushing, pulling, and merging in git
 * Flex box and CSS
 * Making API calls and storing data with jQuery
+
+[See the live site](tiy-ikennaugwuh-restaurant.surge.sh).
