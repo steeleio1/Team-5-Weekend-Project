@@ -60,3 +60,23 @@ $(document)
     .delegate('.gamesTab', 'mouseenter', function(){ switchTo(mainContent['games']); });
 
 insertData();
+
+
+
+// pop up box
+var e = document.getElementById('exclamation');
+e.onmouseover = function() {
+  document.getElementById('exPopup').style.display = 'block';
+}
+e.onmouseout = function() {
+  document.getElementById('exPopup').style.display = 'none';
+}
+
+var e = document.getElementById('star');
+e.onmouseover = function() {
+  document.getElementById('starPopup').style.display = 'block';
+}
+e.onmouseout = function() {
+  document.getElementById('starPopup').style.display = 'none';
+}
+
